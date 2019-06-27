@@ -1,0 +1,109 @@
+form { /*formatação do form "quadrado"*/
+    margin: 0 auto; 
+    width: 400px;
+    padding: 2em;
+    border: 1px solid #CCC;
+    border-radius: 3em;
+    background-color:rgba(255, 255, 250, 0.8);
+}
+form div + div { /*harmonizar as divs*/
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+
+}
+.text { /*estlizar apenas os inputs com class= text*/
+    width: 250px;
+}
+
+
+.checkbox { /*estlizar apenas os inputs com class= text*/
+    text-align: center;
+    
+   
+    
+}
+
+a {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    padding-left: 260px;
+    text-decoration: none;
+}
+input, textarea {
+    font: 1em sans-serif;
+    
+    border-radius: 1em;
+    border: 1px solid #FFA500;
+}
+input:focus, textarea:focus {  
+    border-color: #000;
+    border-radius: 1em;
+    
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+    
+}
+
+
+button {
+    margin-left: 23em;
+    text-align: center;
+    background-color: gold;
+    border-radius: 1em;
+    width: 80px;
+    height: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-color: orange;
+
+
+    
+    
+
+}
+h1 {
+  color: black;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto; 
+  width: 600px;
+  padding: 1%;
+  border: 1px solid #CCC;
+  border-radius: 2em;
+ 
+  font-family: cursive;
+  font-weight: 100;
+  font-size: 300%;
+  background: -webkit-linear-gradient(left, rgba(255,255,0,0) 0%,rgba(255,255,0,0.8) 20%,rgba(255,215,0,1) 53%,rgba(255,255,0,0.8) 79%,rgba(255,255,0,0) 100%); 
+  background: linear-gradient(left, rgba(255,255,0,0) 0%,rgba(255,255,0,0.8) 20%,rgba(255,215,0,1) 53%,rgba(255,255,0,0.8) 79%,rgba(255,255,0,0) 100%); 
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+h2 {
+  color: black;
+  font-family: cursive;
+  font-size: 250%;
+  font-weight: 100;
+  text-align: center;
+ 
+  
+}
+h4{background-color: gold;
+   color: gold;
+   border-radius: 1em;
+}
+
+h1 div + div {
+    margin-top: 1em;
+}
+
+body {
+    background-image: url(boli2.png);
+}
