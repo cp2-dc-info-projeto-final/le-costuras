@@ -1,16 +1,16 @@
-use lecosturas;
+use le_costuras;
 
 CREATE TABLE cliente (
     id int NOT null PRIMARY KEY AUTO_INCREMENT,
     nome varchar (100) NOT null,
-    cpf varchar (14) NOT null,
+    cpf varchar (14) NOT null UNIQUE,
     datadenascimento date NOT null,
-    email varchar (200) NOT null,
+    email varchar (200) NOT null UNIQUE,
     senha varchar (20) not null,
     endereco varchar (100) NOT null
     );
     
-CREATE TABLE produto(
+CREATE TABLE produto (
     id int NOT null PRIMARY KEY AUTO_INCREMENT,
     nome varchar (50) NOT null,
     descricao varchar (200) NOT null,
@@ -18,7 +18,7 @@ CREATE TABLE produto(
     preco float NOT null
     );
     
-CREATE TABLE catalogo(
+CREATE TABLE catalogo (
     id int NOT null PRIMARY KEY AUTO_INCREMENT,
     produto int,
     FOREIGN key (id) REFERENCES produto (id)
@@ -50,8 +50,7 @@ CREATE TABLE carrinho (
      nome varchar (100) NOT null,
     cpf varchar (14) NOT null,
     datadenascimento date NOT null,
-    email varchar (200) NOT null,
+    email varchar (200) NOT null UNIQUE,
     senha varchar (20) not null,
     endereco varchar (100) NOT null
     );
-     
