@@ -1,7 +1,7 @@
 <?php
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-    $connection = mysqli_connect("localhost", "root", "", "le_costuras");
+    $connection = mysqli_connect("localhost", "root", "", "bdusuario");
  
     // Check connection
     if($connection === false){
@@ -25,14 +25,14 @@
             } else {
                 $erro = "Senha incorreta";        
                 $_SESSION["erro"] = $erro;
-                header("Location: formLogin.php");
+                header("Location: formlogin.php");
                 exit();
             }
         }
     } else {
         $erro = "Login inexistente";
         $_SESSION["erro"] = $erro;
-        header("Location: formLogin.php");
+        header("Location: formlogin.php");
         exit();
     }        
     mysqli_close($connection);

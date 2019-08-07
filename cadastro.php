@@ -1,11 +1,11 @@
 <?php
-    $nome = $_POST["usuario_nome"];
-    $email = $_POST["usuario_email"];
-    $cpf = $_POST["usuario_cpf"];
-    $endereco = $_POST["usuario_endereco"];
-    $senha = $_POST["usuario_senha"];
-    $confirmaSenha = $_POST["usuario_senha2"];
-    $nascimento = $_POST["usuario_data"];
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $cpf = $_POST["cpf"];
+    $endereco = $_POST["endereco"];
+    $senha = $_POST["senha"];
+    $confirma = $_POST["confirma"];
+    $nascimento = $_POST["data"];
     
     session_start();
     if ($senha != $confirmaSenha) {    
