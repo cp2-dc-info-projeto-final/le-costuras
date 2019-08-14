@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form  class="forc" action="cadastroctrl.php" method="post">
+
 <h1> LêCosturas</h1> 
 <br>
 <nav id="menu" inline >
@@ -31,7 +31,7 @@
 <br>
 <br>
 
-<form  class="forc" action="conexao-cadast.php" method= "post">
+<form  class="forc" action="cadastroctrl.php" method= "post">
     <h4>-</h4>
     <h2>Cadastro</h2>
     <br>
@@ -76,6 +76,7 @@
             <button type="submit">Cadastrar</button>
         </div>
         <h4>-</h4>
+        
 
     <?php
         session_start();
