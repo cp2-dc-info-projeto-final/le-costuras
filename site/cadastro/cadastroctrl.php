@@ -5,6 +5,9 @@
     $email = $_POST["email"];
     $senha = $_POST["senha"];
     $confirma = $_POST["confirma"];
+    $cpf = $_POST["cpf"];
+    $data = $_POST["data"];
+    $endereco = $_POST["endereco"];
     session_start();
     if ($senha != $confirma) {    
         $erro = "As senhas não coincidem";        
@@ -13,9 +16,9 @@
         exit();
     }
     $erro = "";
-    if (cadastraUsuario($nome, $email, $senha) == true) {
+    if (cadastraUsuario($nome, $email, $senha, $confirma, $cpf, $data,$endereco) == true) {
         session_unset();
-        header("Location: ../autenticacao/loginview.php");
+        header("Location: loginview.php");
         exit();
     } else {
         $erro = "E-mail indisponível";        

@@ -1,7 +1,7 @@
 <?php
     
     function cadastrausuario($nome, $email, $senha) {
-        $connection = mysqli_connect("localhost", "root", "", "le-costuras");
+        $connection = mysqli_connect("localhost", "root", "", "bdusuario");
  
         // Check connection
         if($connection === false){
