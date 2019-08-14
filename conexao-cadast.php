@@ -9,7 +9,7 @@
     echo = "$nome";
 
 
-    $link = mysqli_connect("localhost", "root", "", "le_costuras");
+    $link = mysqli_connect("localhost", "root", "", "bdusuario");
  
     // Check connection
     if($link === false){
