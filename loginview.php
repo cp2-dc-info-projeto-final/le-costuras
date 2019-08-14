@@ -15,7 +15,7 @@
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha">
     </p>
-    <input type="submit" value="Cadastrar">
+    <input type="submit" value="Entrar">
     <?php
         session_start();
         if(array_key_exists('erro', $_SESSION) == true){
