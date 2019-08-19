@@ -8,3 +8,11 @@ CREATE TABLE usuario (
     cpf VARCHAR (14)UNIQUE,
     endereco VARCHAR (100)
 );
+
+
+
+
+
+
+
+

@@ -23,6 +23,7 @@
             <li><a href="#">Consertos</a></li>
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
+            <li><a href="#">Carrinho</a></li>
         </ul>
        
     </nav>
@@ -40,4 +41,4 @@
         echo "Seja bem vindo $nome!<br>";
         echo "<a href='sair.php'>Sair</a>";
     }
-?
+?>

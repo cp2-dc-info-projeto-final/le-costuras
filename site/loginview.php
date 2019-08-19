@@ -1,10 +1,9 @@
-
-
-<html>
-    <head><title>LêCosturas</title>
-        <link rel="icon" type="jpg" href="le.jpg" width=60 height=40 />
-        <meta http-equiv=”Content-Type” content=”text/html; charset=iso-8859-1″> <!--permitir acentuação-->
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
 <body>
 <link href="formulario.css" rel="stylesheet"> <!--link com o arquivo css para estilizar o site-->
 <h1> LêCosturas</h1> 
@@ -22,15 +21,16 @@
                   </ul>
               </li>
             <li><a href="#">Consertos</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a  href="cadastro.html">Cadastro</a></li>
+            <li><a href="loginview.php">Login</a></li>
+            <li><a  href="cadastroview.php">Cadastro</a></li>
+            <li><a href="#">Carrinho</a></li>
         </ul>
        
     </nav>
 <br>
 <br>
 
-<form class="forc" method="post">
+<form class="forc" action="loginctrl.php" method="post">
     <h4>              -    </h4>
     <h2>Login</h2>
 <br>    <div >
@@ -58,6 +58,12 @@
   <br>
   <a href="cadastroview.php"> Cadastrar </a> <!--link com a pagina de cadastro-->
   <h4>           -     </h4>
-</form>
+  </form>
 </body>
-</html
+</html>
+    <?php
+        session_start();
+        if(array_key_exists('erro', $_SESSION) == true){
+            $erro = $_SESSION["erro"];
+            echo "<br><b>$erro</b>";
+        }
