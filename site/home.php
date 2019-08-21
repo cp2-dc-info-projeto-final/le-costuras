@@ -40,4 +40,4 @@
         echo "Seja bem vindo $nome!<br>";
         echo "<a href='sair.php'>Sair</a>";
     }
-?
+?>
