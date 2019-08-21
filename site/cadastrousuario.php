@@ -1,6 +1,6 @@
 <?php
     
-    function cadastrausuario($nome, $email, $senha) {
+    function cadastrausuario($nome, $email, $data, $senha, $confirma, $cpf, $endereco) {
         $connection = mysqli_connect("localhost", "root", "", "bdusuario");
  
         // Check connection
@@ -16,7 +16,7 @@
         if (mysqli_num_rows($result) > 0) {
             return false;
         }
-        $sql = "INSERT INTO usuario (nome, email, senha) VALUES
+        $sql = "INSERT INTO usuario (nome, email, data, senha, confirma, cpf, endereco) VALUES
                 ('$nome', '$email', '$hash')";
         if(mysqli_query($connection, $sql)){
             return true;

@@ -8,6 +8,7 @@
 <link href="formulario.css" rel="stylesheet"> <!--link com o arquivo css para estilizar o site-->
 <h1> LêCosturas</h1> 
 
+
 <br>
 <nav id="menu" inline >
         <ul>
@@ -27,18 +28,14 @@
         </ul>
        
     </nav>
-</body>
-</html>
-    <?php
-    session_start();
-    if(array_key_exists('nome', $_SESSION) == false){
-        $erro = "Acesso Negado!";        
-        $_SESSION["erro"] = $erro;
-        header('Location: formLogin.php');
-        exit();
-    } else {
-        $nome = $_SESSION["nome"];
-        echo "Seja bem vindo $nome!<br>";
-        echo "<a href='sair.php'>Sair</a>";
-    }
-?>
+    <br>
+    <br>
+
+    <div class="card">
+        <img src="teste.jpg" alt="ROUPA">
+        <div class="container">
+          <h3><b>Roupinha</b></h3> 
+          <p>roupinha</p> 
+        </div>
+      </div>
+   

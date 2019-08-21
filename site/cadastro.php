@@ -5,7 +5,7 @@
     $endereco = $_POST["endereco"];
     $senha = $_POST["senha"];
     $confirma = $_POST["confirma"];
-    $nascimento = $_POST["data"];
+    $data = $_POST["data"];
     
     session_start();
     if ($senha != $confirmaSenha) {    

@@ -4,7 +4,7 @@
 <head>
 <link href="formulario.css" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Formulário de Cadastro</title>
+<title>Cadastro</title>
 </head>
 <body>
 
@@ -40,10 +40,10 @@
         <label for="nome">Nome:</label>
         <input class="text" type="nome" id="nome" name="nome" />
     </div>
-<br>
+<br> 
     <div >
        <label for="cpf">CPF:</label>
-        <input class="text"  type="text" class="form-control" placeholder="  Ex.: 000.000.000.00"  maxlength="14" autocomplete="off" cpf-mask= 000.000.000-00" id="cpf" name="cpf" />
+        <input class="text"  type="text" class="form-control" placeholder="  Ex.: 000.000.000.00"  maxlength="14" autocomplete="off" cpf-mask= 000.000.000-00" id="cpf" name= "cpf" />
     </div>
 <br>
     <div >
@@ -68,7 +68,7 @@
         </div>
         
         <div >
-                <label for="senha2">Confirme sua senha:</label>
+                <label for="confirma">Confirme sua senha:</label>
                 <input class="text" type="password" id="confirma" name="confirma" />
         </div>
     
