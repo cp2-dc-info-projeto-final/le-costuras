@@ -3,10 +3,9 @@
     require "cadastrousuario.php";
     $nome = $_POST["nome"];
     $email = $_POST["email"];
-    $data = $_POST["data"];
     $senha = $_POST["senha"];
+    $datanasc  = $_POST["datanasc"];
     $confirma = $_POST["confirma"];
-    $cpf = $_POST["cpf"];
     $endereco = $_POST["endereco"];
     session_start();
     if ($senha != $confirma) {    
@@ -16,7 +15,7 @@
         exit();
     }
     $erro = "";
-    if (cadastraUsuario($nome, $email, $data, $senha, $confirma, $cpf, $endereco) == true) {
+    if (cadastraUsuario($nome, $email,  $senha, $datanasc , $endereco) == true) {
         session_unset();
         header("Location: loginview.php");
         exit();

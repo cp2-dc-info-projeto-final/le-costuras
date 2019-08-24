@@ -40,15 +40,10 @@
         <label for="nome">Nome:</label>
         <input class="text" type="nome" id="nome" name="nome" />
     </div>
-<br> 
-    <div >
-       <label for="cpf">CPF:</label>
-        <input class="text"  type="text" class="form-control" placeholder="  Ex.: 000.000.000.00"  maxlength="14" autocomplete="off" cpf-mask= 000.000.000-00" id="cpf" name= "cpf" />
-    </div>
 <br>
     <div >
             <label for="date">Data de Nascimento:</label>
-            <input class="DATE" type="date" id="data" name="data" />
+            <input class="DATE" type="date" id="datanasc" name="datanasc" />
     </div>
 <br>
 
@@ -88,7 +83,7 @@
     ?>
     
     <p>
-        <a href="formLogin.php">Login</a>
+        <a href="loginview.php">Login</a>
     </p>
 </form>
 </body>
