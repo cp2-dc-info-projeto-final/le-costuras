@@ -1,12 +1,8 @@
 <?php
-    
-    function cadastrausuario($nome, $email, $senha) {
-        $connection = mysqli_connect("localhost", "root", "", "bdusuario");
- 
-        // Check connection
-        if($connection === false){
-            die("Erro" . mysqli_connect_error());
-        }
+    require "conexao.php";
+    function cadastrausuario($nome, $email, $senha, $datanasc , $endereco) {
+        $connection = getConnection();
+
         $sql = "SELECT id FROM usuario WHERE email='$email'";
         $result = mysqli_query($connection, $sql);
         $erro = "";
@@ -16,8 +12,8 @@
         if (mysqli_num_rows($result) > 0) {
             return false;
         }
-        $sql = "INSERT INTO usuario (nome, email, senha) VALUES
-                ('$nome', '$email', '$hash')";
+        $sql = "INSERT INTO usuario (nome, email, senha, datanasc , endereco) VALUES
+                ('$nome', '$email', '$hash', '$datanasc ', '$endereco')";
         if(mysqli_query($connection, $sql)){
             return true;
         } else{

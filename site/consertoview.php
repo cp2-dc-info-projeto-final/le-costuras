@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>LêCosturas</title>
+<title>Consertos</title>
 </head>
 <body>
 <link href="formulario.css" rel="stylesheet"> <!--link com o arquivo css para estilizar o site-->
@@ -28,17 +28,3 @@
        
     </nav>
 </body>
-</html>
-    <?php
-    session_start();
-    if(array_key_exists('nome', $_SESSION) == false){
-        $erro = "Acesso Negado!";        
-        $_SESSION["erro"] = $erro;
-        header('Location: formLogin.php');
-        exit();
-    } else {
-        $nome = $_SESSION["nome"];
-        echo "Seja bem vindo $nome!<br>";
-        echo "<a href='sair.php'>Sair</a>";
-    }
-?>

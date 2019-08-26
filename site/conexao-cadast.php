@@ -1,11 +1,12 @@
 <?php
     $nome = $_POST["nome"];
     $email = $_POST["email"];
-    $senha = $_POST["senha"];
     $data = $_POST["data"];
+    $senha = $_POST["senha"];
+    $confirma = $_POST["confirma"];
     $cpf = $_POST["cpf"];
     $endereco = $_POST["endereco"];
-    $senha2 = $_POST["senha2"];
+    
     echo = "$nome";
 
 
@@ -16,8 +17,8 @@
         die("Nâo foi possível executar o cadastro." . mysqli_connect_error());
     }
 
-    $sql = "INSERT INTO usuario (nome, email, senha, data, cpf, endereco, senha2) VALUES
-            ('$nome', '$email', '$senha', '$data', '$cpf', '$endereco' ,'$senha2')";
+    $sql = "INSERT INTO usuario (nome, email, senha, data, cpf, endereco, comfirma) VALUES
+            ('$nome', '$email', '$data', '$senha', '$confirma', '$cpf', '$endereco')";
     if(mysqli_query($link, $sql)){
         echo "Cadastro Concluído";
     } else{

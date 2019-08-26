@@ -23,6 +23,7 @@
             <li><a href="#">Consertos</a></li>
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
+            <li><a href="#">Carrinho</a></li>
         </ul>
        
     </nav>
@@ -45,7 +46,7 @@
     <div class= "checkbox">
     <input type="checkbox" id="Login" name="Login" checked> Mantenha-me logado</input></div>
     <div class="button">
-        <button type="submit">Entrar</button>
+    <button type="button" class="btn btn-warning">Entrar</button>
     </div>
     <div>
        
@@ -56,7 +57,7 @@
   <a href="">Esqueci minha senha</a>
   <br>
   <a href="cadastroview.php"> Cadastrar </a> <!--link com a pagina de cadastro-->
-  <h4>           -     </h4>
+  <h3>           -     </h4>
   </form>
 </body>
 </html>
