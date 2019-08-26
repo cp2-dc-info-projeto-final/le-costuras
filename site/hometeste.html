@@ -30,12 +30,76 @@
     </nav>
     <br>
     <br>
-
+<form class="forp">
     <div class="card">
-        <img src="teste.jpg" alt="ROUPA">
+        <img src="teste.jpg"  alt="ROUPA">
         <div class="container">
           <h3><b>Roupinha</b></h3> 
           <p>roupinha</p> 
         </div>
       </div>
+
+     
+
+      <div class="flipcard">
+        <div class="flipcardinner">
+          <div class="flipcardfront">
+            <img src="desconto.jpg" alt="ROUPA" >
+          </div>
+          <div class="flipcardback">
+            <h2>Roupa legal</h2> 
+            <p class="t"> R$500,00 </p>
+            <p>R$499,50</p> 
+            <p>100% algodão</p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .button {
+          border-radius: 4px;
+          background-color: #f4511e;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 18px;
+          padding: 20px;
+          width: 150px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        
+        .button span {
+          cursor: pointer;
+          
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+        </head>
+        <body>
+        
+       
+        
+        <button class="button"><span>proximo </span></button>
+    </form>
    
