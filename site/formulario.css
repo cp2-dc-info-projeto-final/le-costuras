@@ -202,8 +202,9 @@ body {
                   }
                   
                   /* Add some padding inside the card container */
-                  .container {
+                  .container2 {
                     padding: 2px 16px;
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                   }
                 
 
@@ -211,9 +212,16 @@ body {
 .flipcard {
     background-color: transparent;
     width: 360px;
-    height: 280px;
-    border: 1px solid #f1f1f1;
+    height: 380px;
+    
     perspective: 1000px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+                     transition: 0.3s;
+                   
+                    background-color:rgba(255, 255, 250, 0.8);
+                    text-align: center;
+                    image-orientation: center;
+                    padding: 2px 1px;
   
      /* Remove this if you don't want the 3D effect */
   }
@@ -221,6 +229,7 @@ body {
   .flipcard img {
     width:360px;
     height: 280px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   
     
   }
@@ -237,6 +246,7 @@ body {
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .flipcard:hover .flipcardinner {
     transform: rotateY(180deg);
+    
   }
   
   /* Position the front and back side */
@@ -248,17 +258,15 @@ body {
   }
   
   /* Style the front side (fallback if image is missing) */
-  .flipcardfront {
-    background-color: #bbb;
-    color: black;
-  }
+ 
+  
   
   /* Style the back side */
   .flipcardback {
-    background-color: dodgerblue;
-    color: white;
+ 
     transform: rotateY(180deg);
   }
 
    .t {
       text-decoration: line-through;
+   }
