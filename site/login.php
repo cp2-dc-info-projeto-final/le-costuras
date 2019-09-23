@@ -25,14 +25,14 @@
             } else {
                 $erro = "Senha incorreta";        
                 $_SESSION["erro"] = $erro;
-                header("Location: formlogin.php");
+                header("Location: loginview.php");
                 exit();
             }
         }
     } else {
         $erro = "Login inexistente";
         $_SESSION["erro"] = $erro;
-        header("Location: formlogin.php");
+        header("Location: loginview.php");
         exit();
     }        
     mysqli_close($connection);

@@ -14,7 +14,7 @@
             <li><a  href="pagina inicial.html">Home</a></li>
             <li><a href="pagina inicial.html">Catálogo</a>
                 <ul> 
-                    <li><a href="#">Feminino</a></li>
+                    <li><a href="femininioview.php">Feminino</a></li>
                     <li><a href="#">Masculino</a></li>
                     <li><a href="#">Infantil</a></li>
                     <li><a href="#">Promoções</a></li>                     
@@ -44,9 +44,9 @@
     </div>
     <br>
     <div class= "checkbox">
-    <input type="checkbox" id="Login" name="Login" checked> Mantenha-me logado</input></div>
+    <input type="checkbox" id="Login" name="Login" checked> Mantenha-me logado </div>
     <div class="button">
-    <button type="button" class="btn btn-warning">Entrar</button>
+    <button type="submit" >Entrar</button>
     </div>
     <div>
        

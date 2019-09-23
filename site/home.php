@@ -34,7 +34,7 @@
     if(array_key_exists('nome', $_SESSION) == false){
         $erro = "Acesso Negado!";        
         $_SESSION["erro"] = $erro;
-        header('Location: formLogin.php');
+        header('Location: loginview.php');
         exit();
     } else {
         $nome = $_SESSION["nome"];
