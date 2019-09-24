@@ -13,19 +13,18 @@
         <ul>
             <li><a  href="pagina inicial.html">Home</a></li>
             <li><a href="pagina inicial.html">Catálogo</a>
-                <ul> 
-                    <li><a href="femininioview.php">Feminino</a></li>
-                    <li><a href="#">Masculino</a></li>
-                    <li><a href="#">Infantil</a></li>
-                    <li><a href="#">Promoções</a></li>                     
+                <ul>
+                        <li><a href="femininioview.php">Feminino</a></li>
+                        <li><a href="maculinoview.php">Masculino</a></li>
+                        <li><a href="infantilview.php">Infantil</a></li>
+                        <li><a href="#">Promoções</a></li>                    
                   </ul>
               </li>
-            <li><a href="#">Consertos</a></li>
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
             <li><a href="#">Carrinho</a></li>
         </ul>
-       
+        
     </nav>
 <br>
 <br>
