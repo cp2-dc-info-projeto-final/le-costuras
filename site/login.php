@@ -1,7 +1,7 @@
 <?php
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-    $connection = mysqli_connect("localhost", "root", "", "bdusuario");
+    $connection = mysqli_connect("localhost", "root", "", "lecostura");
  
     // Check connection
     if($connection === false){

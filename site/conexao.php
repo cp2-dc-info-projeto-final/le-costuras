@@ -1,7 +1,7 @@
 <?php
 
     function getConnection() {
-        $link = mysqli_connect("localhost", "root", "", "bdusuario");
+        $link = mysqli_connect("localhost", "root", "", "lecostura");
  
         // Check connection
         if($link === false){

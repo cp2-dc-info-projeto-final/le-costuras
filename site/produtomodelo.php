@@ -1,11 +1,11 @@
 <?php
 function buscarprodutos() {
-    $connection = mysqli_connect("localhost", "root", "", "bdproduto");
+    $connection = mysqli_connect("localhost", "root", "", "lecostura");
     // Check connection
     if($connection === false) {
         die("erro" . mysqli_connect_error());
     }
-    $sql = "SELECT  nome, preco, descricao  FROM masculino";
+    $sql = "SELECT  nome, preco, descricao  FROM produto";
     $result = mysqli_query($connection, $sql);
     $erro = "";
     $produtos = [];

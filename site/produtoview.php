@@ -2,13 +2,13 @@
 <html lang="en" >
     <head>
     <meta charset="UTF-8">
-        <title>Masculino</title>
+        <title>Produtos</title>
        
     </head>
 <body>
 
 <?php
-   require_once('masculinoctrl.php');
+   require_once('produtosctrl.php');
     $produtos = exibirprodutos();
     foreach ($produtos as $produt) {
         echo "<h3>" . $produt['nome'] . "</h3>";
