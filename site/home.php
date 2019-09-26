@@ -11,8 +11,8 @@
 <br>
 <nav id="menu" inline >
         <ul>
-            <li><a  href="pagina inicial.html">Home</a></li>
-            <li><a href="pagina inicial.html">Catálogo</a>
+        <li><a  href="home.php">Home</a></li>
+            <li><a href="">Catálogo</a>
                 <ul>
                         <li><a href="femininioview.php">Feminino</a></li>
                         <li><a href="maculinoview.php">Masculino</a></li>
