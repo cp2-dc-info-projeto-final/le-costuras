@@ -1,14 +1,11 @@
 <?php
-
-    function getConnection() {
-        $link = mysqli_connect("localhost", "root", "", "lecosturas");
- 
-        // Check connection
-        if($link === false){
-            die("Nâo foi possível executar o cadastro." . mysqli_connect_error());
-        }
-
-        return $link;
+    function get_connection() {
+        $host="localhost";
+        $user="root";
+        $password="";
+        $database="lecostura";
+        $conn=mysqli_connect($host, $user, $password, $database );
+        mysqli_set_charset($conn,'utf8');
+        return $conn;
     }
-
-?>
+?
