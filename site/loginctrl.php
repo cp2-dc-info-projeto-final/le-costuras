@@ -1,19 +1,19 @@
 <?php
-    require "login.php";
+    require "loginmodelo.php";
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-        
+    
     session_start();
-    if (autentica($email, $senha) == true) {
+    if (logar($email, $senha) == true) {
         session_unset();
-        $_SESSION["nome"] = $row["nome"]; 
-        header("Location: home.php");
+        $_SESSION["nome"] = $row["nome"];
+        header("Location: ../index.html");
         exit();
     }
     else {
-        $erro = "Login ou senha incorretos";        
+        $erro = "Login ou senha incorretos";
         $_SESSION["erro"] = $erro;
-        header("Location: loginview.php");
+        header("Location: loginView.php");
         exit();
-    }    
+    }
 ?>
