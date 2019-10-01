@@ -1,6 +1,6 @@
 <?php
     
-    require "cadastrousuario.php";
+    require "cadastromodelo.php";
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $senha = $_POST["senha"];
@@ -15,7 +15,7 @@
         exit();
     }
     $erro = "";
-    if (cadastraUsuario($nome, $email,  $senha, $datanasc , $endereco) == true) {
+    if (cadastrarusuario($nome, $email,  $senha, $datanasc , $endereco) == true) {
         session_unset();
         header("Location: loginview.php");
         exit();

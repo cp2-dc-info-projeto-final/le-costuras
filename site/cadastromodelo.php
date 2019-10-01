@@ -2,7 +2,6 @@
     require "conexao.php";
     function cadastrausuario($nome, $email, $senha, $datanasc , $endereco) {
         $connection = getConnection();
-
         $sql = "SELECT id FROM usuario WHERE email='$email'";
         $result = mysqli_query($connection, $sql);
         $erro = "";

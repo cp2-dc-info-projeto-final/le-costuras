@@ -4,10 +4,10 @@
     $senha = $_POST["senha"];
     
     session_start();
-    if (logar($email, $senha) == true) {
+    if (autenticacao($email, $senha) == true) {
         session_unset();
         $_SESSION["nome"] = $row["nome"];
-        header("Location: ../index.html");
+        header("Location: home.php");
         exit();
     }
     else {
