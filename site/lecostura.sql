@@ -21,6 +21,6 @@ CREATE TABLE carrinho (
     preco float,
     qtd INT(20),
     sessao TEXT
-    
+                                                                                                                                         -
 );
 
