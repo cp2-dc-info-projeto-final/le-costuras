@@ -58,15 +58,14 @@
   <a href="cadastroview.php"> Cadastrar </a> <!--link com a pagina de cadastro-->
   <h3>           -     </h4>
   </form>
-
   <?php
-                session_start();
-                if(array_key_exists('erro', $_SESSION) == true){
-                    $erro = $_SESSION["erro"];
-                    echo "<br><b>$erro</br>";
-                    session_unset();
-                }
-            ?>
+            session_start();
+            if(array_key_exists('erro', $_SESSION) == true){
+                $erro = $_SESSION["erro"];
+                echo "<br><b>$erro</b>";
+                session_unset();
+            }
+        ?>
 </body>
 </html>
     

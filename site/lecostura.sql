@@ -1,5 +1,5 @@
 CREATE TABLE produto (
-	id int PRIMARY KEY,
+	id int PRIMARY KEY  AUTO_INCREMENT,
 	nome	varchar(100),	
     preco	float,	
 	descricao	longtext

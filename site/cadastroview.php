@@ -72,14 +72,13 @@
         </div>
         <h4>-</h4>
         
-
-    <?php
-        session_start();
-        if(array_key_exists('erro', $_SESSION) == true){
-            $erro = $_SESSION["erro"];
-            echo "<br><b>$erro</b>";
-        }
-    ?>
+        <?php
+                session_start();
+                if(array_key_exists('erro', $_SESSION) == true){
+                    $erro = $_SESSION["erro"];
+                    echo "$erro";
+                }
+            ?>
     
     <p>
         <a href="loginview.php">Login</a>
