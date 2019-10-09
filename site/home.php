@@ -25,7 +25,6 @@
             <li><a href="#">Carrinho</a></li>
         </ul>
         
-    </nav>
 </body>
 </html>
     <?php
