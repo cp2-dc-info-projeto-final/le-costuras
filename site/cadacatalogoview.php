@@ -34,17 +34,7 @@
                 }
 
                 
-                session_start();
-                if(array_key_exists('nome', $_SESSION) == false){
-                    $erro = "Não Foi Possível Catalogar";        
-                    $_SESSION["erro"] = $erro;
-                    header('Location: cadacatalogoview.php');
-                    exit();
-                } else {
-                    $nome = $_SESSION["nome"];
-                    echo "Catalogado!:) $nome!<br>";
-                }
-            
+                
             ?>
 
         </body>

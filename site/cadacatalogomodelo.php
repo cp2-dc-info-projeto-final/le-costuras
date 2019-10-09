@@ -1,5 +1,5 @@
 <?php
-    require "conexao.php";
+    require "conexao2.php";
     function cadastracatalogo($nome, $preco, $descricao) {
         $connection = getConnection();
         $sql = "SELECT id FROM produto";
