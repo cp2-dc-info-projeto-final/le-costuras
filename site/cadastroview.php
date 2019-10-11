@@ -27,17 +27,21 @@
 <br>
 
 <form  class="forc" action="cadastroctrl.php" method= "post">
+<?php
+      session_start();
+      if(array_key_exists('erro', $_SESSION) == true){
+          $erro = $_SESSION["erro"];
+          echo "<br><b>$erro</b>";
+          session_unset();
+      }
+      ?>
+      
     <h4>-</h4>
     <h2>Cadastro</h2>
     <br>
     <div >
         <label for="nome">Nome:</label>
         <input class="text" type="nome" id="nome" name="nome" />
-    </div>
-<br>
-    <div >
-            <label for="date">Data de Nascimento:</label>
-            <input class="DATE" type="date" id="datanasc" name="datanasc" />
     </div>
 <br>
 
@@ -67,13 +71,7 @@
         </div>
         <h4>-</h4>
         
-        <?php
-                session_start();
-                if(array_key_exists('erro', $_SESSION) == true){
-                    $erro = $_SESSION["erro"];
-                    echo "$erro";
-                }
-            ?>
+        
     
     <p>
         <a href="loginview.php">Login</a>
