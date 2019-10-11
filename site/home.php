@@ -29,14 +29,14 @@
 </html>
     <?php
     session_start();
-    if(array_key_exists('nome', $_SESSION) == false){
+    if(array_key_exists('email', $_SESSION) == false){
         $erro = "Acesso Negado!";        
         $_SESSION["erro"] = $erro;
         header('Location: loginview.php');
         exit();
     } else {
-        $nome = $_SESSION["nome"];
-        echo "Seja bem vindo $nome!<br>";
+        $email = $_SESSION["email"];
+        echo "Seja bem vindo $email!<br>";
         echo "<a href='sair.php'>Sair</a>";
     }
 ?>

@@ -6,7 +6,7 @@
      if ($conn===false){
          die("Erro de conexão".mysqli_connect_error());
      }
-     $sql= "SELECT senha, nome FROM usuario WHERE email='$email'";
+     $sql= "SELECT nome, senha FROM usuario WHERE email='$email'";
      $result= mysqli_query($conn, $sql);
      if (mysqli_num_rows($result)>0){
          while($row=mysqli_fetch_assoc($result)){

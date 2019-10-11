@@ -43,16 +43,16 @@
         <label for="nome">Nome:</label>
         <input class="text" type="nome" id="nome" name="nome" />
     </div>
-<br>
 
-    <div >
-            <label for="endeco">Endereço:</label>
-            <input class="text" type="endereco" id="endereco" name="endereco" />
-    </div>
 <br>
     <div >
         <label for="email">E-mail:</label>
         <input class="text" type="email" id="email" placeholder="  Ex.:usuario@gmail.com" name="email" />
+    </div>
+    <br>
+    <div >
+            <label for="endeco">Endereço:</label>
+            <input class="text" type="endereco" id="endereco" name="endereco" />
     </div>
     <br>
         <div >

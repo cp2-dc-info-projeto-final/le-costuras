@@ -37,12 +37,12 @@
     <h2>Login</h2>
 <br>    <div >
         <label for="email">E-mail:</label>
-        <input class="text" type="email" id="email"  name="usuario_email" />
+        <input class="text" type="email" id="email"  name="email" />
     </div>
 <br>
     <div >
         <label for="senha">Senha:</label>
-        <input class="text" type="password" id="senha"  name="usuario_senha" />
+        <input class="text" type="password" id="senha"  name="senha" />
     </div>
     <br>
     <div class= "checkbox">

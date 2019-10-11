@@ -1,18 +1,24 @@
 <?php
-    require "conexao2.php";
-    function cadastracatalogo($nome, $preco, $descricao) {
-        $connection = getConnection();
-        $sql = "SELECT id FROM produto";
-        $result = mysqli_query($connection, $sql);
-        $erro = "";
-        
-        $sql = "INSERT INTO produto (nome, preco, descricao) VALUES
-                ('$nome', '$preco', '$descricao')";
-        if(mysqli_query($connection, $sql)){
-            return true;
-        } else{
-            die("Erro ao efetuar catalogo $sql. " . mysqli_error($connection));
-        }
-        mysqli_close($connection);
+ function cadastraproduto($nome, $preco, $descricao){
+    include_once "conexaocatalogo.php";
+ $conn=get_connection();
+    if($conn===false){
+        die("Falha na conexão". mysqli_connect_error());
+ }
+    $sql="SELECT id FROM produto WHERE";
+    $result=mysqli_query($conn, $sql);
+    $erro="";
+    
+    if (mysqli_num_rows($result)>0){
+        return false;
+    } 
+    $sql="INSERT INTO usuario (nome, preco, descricao   ) VALUES ('$nome', '$preco', '$descricao')";
+    if (mysqli_query($conn, $sql)){
+        return true;
+    } else{
+        die("Erro ao ecatalogar" . mysqli_error($conn));
     }
-?>
+    mysqli_close($conn);
+  
+ }
+ ?>

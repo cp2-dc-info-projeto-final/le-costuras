@@ -4,8 +4,8 @@
     $email = $_POST["email"];
     $senha = $_POST["senha"];
     session_unset();
-    if (autentica($email, $senha)== true){
-        $moderador=moderador($email);
+    if (autentica($email, $senha) != false){
+        $_SESSION["email"]=$email;
         header("Location:home.php");
         exit();
     } else{

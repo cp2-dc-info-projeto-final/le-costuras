@@ -1,6 +1,6 @@
 
 <?php
- function cadastrausuario($nome, $email, $senha, $confirma, $endereco){
+ function cadastrausuario($nome, $email, $endereco, $senha){
     include_once "conexao.php";
  $conn=get_connection();
     if($conn===false){
@@ -14,7 +14,7 @@
     if (mysqli_num_rows($result)>0){
         return false;
     } 
-    $sql="INSERT INTO usuario (nome, email, senha, confirma, endereco  ) VALUES ('$nome', '$email', '$hash', '$hash', '$endereco')";
+    $sql="INSERT INTO usuario (nome, email, endereco, senha   ) VALUES ('$nome', '$email', '$endereco', '$hash')";
     if (mysqli_query($conn, $sql)){
         return true;
     } else{
