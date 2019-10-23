@@ -13,7 +13,18 @@
     <body>
        <section>
           <header>
-             <h1 class="color-white text-center font-text-hard-two font weight-heavy link-bgcolor-black">PRODUTOS</h1>
+             <?php
+              $sessao = $_SESSION['pedido'];
+              $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE 
+              temporario_sessao =:ses");
+              $consulta -> bindValue(':ses', $sessao);
+              $consulta -> execute();
+              $linhas = $consulta -> rowCount();
+             ?>
+             <p class="text-right"><a href="carrinho.php" class="color-white bgcolor-red
+             font-text-light font-weight-heavy car_show">CARRINHO(<?=$linhas ?>)</a></p><br>
+             <h1 class="color-white text-center font-text-hard-two font weight-heavy 
+             link-bgcolor-black">PRODUTOS</h1>
           </header>
 
         <?php
@@ -34,7 +45,7 @@
 
        <p class="bgcolor-red text-center btn"><a href="comprar.php?prod=<?= $amostra['produto_id']?>" class="color-white">Comprar Peça</a></p>
     </article>
-    <?php endforeach; ?>
+    <?php endforeach;?>
      </section>
 </body>
 </html>
