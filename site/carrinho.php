@@ -92,6 +92,7 @@
                     "finalizar-pedido.php?ref=<?= $mostra['temporario_sessao']?>" class=
                     "color-white bgcolor-red text-center final">Finalixar Pedido</a><td>
                 </tr>
+                
                 </table>
                    <p class="bgcolor-red text-center btn"><a href="finalizar-pedido.php?ref=<?= 
                    $mostra['temporario_sessao']?>" class="color-white">Comprar Peça</a></p>
