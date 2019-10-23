@@ -6,6 +6,14 @@
 
 </head> 
 <body>
+<?php
+      session_start();
+      if(array_key_exists('erro', $_SESSION) == true){
+          $erro = $_SESSION["erro"];
+          echo "<br><b>$erro</b>";
+          session_unset();
+      }
+      ?>
    <div >
         <label for="nome">Nome:</label>
         <input class="text" type="nome" id="nome" name="nome" />
@@ -25,17 +33,6 @@
         <div class="button">
             <button type="submit">Catalogar</button>
         </div>
-
-        <?php
-                session_start();
-                if(array_key_exists('erro', $_SESSION) == true){
-                    $erro = $_SESSION["erro"];
-                    echo "$erro";
-                }
-
-                
-                
-            ?>
 
         </body>
         </html>

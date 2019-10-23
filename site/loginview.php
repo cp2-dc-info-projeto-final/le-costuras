@@ -13,12 +13,7 @@
         <ul>
             <li><a  href="home.php">Home</a></li>
             <li><a href="">Catálogo</a>
-                <ul>
-                        <li><a href="femininioview.php">Feminino</a></li>
-                        <li><a href="maculinoview.php">Masculino</a></li>
-                        <li><a href="infantilview.php">Infantil</a></li>
-                        <li><a href="#">Promoções</a></li>                    
-                  </ul>
+               
               </li>
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
@@ -42,12 +37,12 @@
     <h2>Login</h2>
 <br>    <div >
         <label for="email">E-mail:</label>
-        <input class="text" type="email" id="email"  name="usuario_email" />
+        <input class="text" type="email" id="email"  name="email" />
     </div>
 <br>
     <div >
         <label for="senha">Senha:</label>
-        <input class="text" type="password" id="senha"  name="usuario_senha" />
+        <input class="text" type="password" id="senha"  name="senha" />
     </div>
     <br>
     <div class= "checkbox">
