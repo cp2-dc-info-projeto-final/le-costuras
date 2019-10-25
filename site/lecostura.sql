@@ -2,7 +2,8 @@ CREATE TABLE produto (
 	id int PRIMARY KEY  AUTO_INCREMENT,
 	nome	varchar(100),	
     preco	float,	
-	descricao	varchar(200)
+	descricao	varchar(200),
+    imagem varchar(400)
 );
 
 CREATE TABLE usuario (
