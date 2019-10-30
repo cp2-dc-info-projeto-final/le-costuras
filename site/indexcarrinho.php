@@ -13,16 +13,16 @@
     <body>
        <section>
           <header>
-             <?php
-              $sessao = $_SESSION['pedido'];
-              $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE 
-              temporario_sessao =:ses");
-              $consulta -> bindValue(':ses', $sessao);
-              $consulta -> execute();
-              $linhas = $consulta -> rowCount();
+          <?php
+             $sessao = $_SESSION['pedido'];
+             $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
+             temporario_sessa= :ses");
+             $consulta -> bindValue(':ses', $sessao);
+             $consulta -> execute();
+             $linhas = $consulta -> rowCount();
              ?>
              <p class="text-right"><a href="carrinho.php" class="color-white bgcolor-red
-             font-text-light font-weight-heavy car_show">CARRINHO(<?=$linhas ?>)</a></p><br>
+             font-text-light font-weight-heavy car_show">Carrinho(<?= $linhas ?>)</a></p><br>
              <h1 class="color-white text-center font-text-hard-two font weight-heavy 
              link-bgcolor-black">PRODUTOS</h1>
           </header>
@@ -43,9 +43,11 @@
        <p class="bgcolor-gray text-center color-dark-full font-text-light-med"><s>Por: R$
        <?= number_format($amostra['produto_preco'], 2, ',', '.')?></p>
 
-       <p class="bgcolor-red text-center btn"><a href="comprar.php?prod=<?= $amostra['produto_id']?>" class="color-white">Comprar Peça</a></p>
+       <p class="bgcolor-red text-center btn"><a href="comprar.php?prod=<?= 
+       $amostra['produto_id']?>" class="color-white">Comprar Peça</a></p>
     </article>
-    <?php endforeach;?>
+    <?php endforeach; ?>
      </section>
 </body>
 </html>
+
