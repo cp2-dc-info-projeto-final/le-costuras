@@ -40,13 +40,13 @@ Fiquem sempre ligados no site, as vezes rolam diversas promoções de roupas.
     </div>
 
 
-    <h2 class="w3-center">text???</h2>
+    <h2 class="title">APROVEITE!</h2>
 
 <center>
   <div> 
-   <img class="mySlides" src="pastel.jpg" style="width:50%">
-   <img class="mySlides" src="pizza.jpg" style="width:50%">
-   <img class="mySlides" src="panqueca.jpg" style="width:50%">
+   <img class="mySlides" src="ROUPA.jpg" style="width:50%">
+   <img class="mySlides" src="ROUPA2 (1).jpg" style="width:50%">
+   <img class="mySlides" src="ROUPA2.jpg" style="width:50%">
   </div>
 <center>
 
