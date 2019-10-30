@@ -31,7 +31,6 @@
              $linhas = $consulta -> rowCount();
              foreach($consulta as $mostra):
              $total += $mostra['temporario_preco'];
-             $valor = $mostra['temporario_qtde'] * $mostra['temporario_preco'];  ççççç
 
                  $prod = $mostra['temporario_produto'];
                  $consultar = $pdo->prepare("SELECT * FROM carrinho_produtos WHERE
