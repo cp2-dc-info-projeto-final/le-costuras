@@ -1,84 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: "Lato", sans-serif;}
-
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 12.5%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 50px;
-  text-align: center;
-}
-
-#azul {background-color:#6495ED;}
-#salmao {background-color:#FA8072;}
-#musgo {background-color:#556B2F;}
-#vermelho {background-color:#B22222;}
-#amarelo {background-color:#DAA520;}
-#verde {background-color:#2E8B57;}
-#rosa {background-color:#BC8F8F;}
-#cinza {background-color:grey;}
-
-
-</style>
+<link href="formulario.css" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Cadastro</title>
 </head>
 <body>
 
-<div id="azul" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Home</p>
-</div>
 
-<div id="salmao" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Feminino</p>
-</div>
-
-<div id="musgo" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Masculino</p>
-</div>
-
-<div id="vermelho" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Infantil</p>
-</div>
-
-<div id="amarelo" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Consertos</p>
-</div>
-
-<div id="verde" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Cadastro</p> 
-</div>
-
-<div id="rosa" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Login</p>
-</div>
-
-<div id="cinza" class="tabcontent">
-  <h1>Lê Costuras</h1>
-  <p>Carrinho</p>
-</div>
+<h1> LêCosturas</h1> 
+<br>
+<nav id="menu" inline >
+        <ul>
+        <li><a  href="home.php">Home</a></li>
+            <li><a href="">Catálogo</a>
+              
+              </li>
+            <li><a href="loginview.php">Login</a></li>
+            <li><a  href="cadastroview.php">Cadastro</a></li>
+            <li><a href="#">Carrinho</a></li>
+        </ul>
+        
+    </nav>
+<br>
+<br>
+</body>
+</html>
