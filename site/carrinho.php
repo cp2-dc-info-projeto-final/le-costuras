@@ -21,7 +21,7 @@
               <table border="1" width="800">
 
         <?php
-             $consulta = $prod->prepare("SELECT * FROM carrinho_temporario WHERE
+             $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
              temporario_sessa= :ses");
              $consulta -> bindValue(':ses', $sessao);
              $consulta -> execute();
@@ -32,7 +32,7 @@
              $total += $mostra['temporario_preco'];
 
                  $prod = $mostra['temporario_produto'];
-                 $consultar = $prod->prepare("SELECT * FROM carrinho_produtos WHERE
+                 $consultar = $pdo->prepare("SELECT * FROM carrinho_produtos WHERE
                  produto_id =:prod");
                  $consultar -> bindValue(':prod', $prod);
                  $consultar -> execute();
