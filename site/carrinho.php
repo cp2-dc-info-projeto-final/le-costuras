@@ -21,7 +21,6 @@
               <table border="1" width="800">
 
         <?php
-             $sessao = $_SESSION['pedido'];
              $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
              temporario_sessa= :ses");
              $consulta -> bindValue(':ses', $sessao);
