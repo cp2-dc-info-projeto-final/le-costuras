@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="formulario.css" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Cadastrar Catálogo</title>
 
 </head> 
 <body>
-<form  class="forc" action="cadacatalogoctrl.php" method= "post">
+<form  class="forc" action="cadacatalogoctrl.php" method="post" enctype="multipart/form-data">
 
    <div >
         <label for="nome">Nome:</label>
