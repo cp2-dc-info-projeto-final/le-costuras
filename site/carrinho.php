@@ -21,6 +21,7 @@
               <table border="1" width="800">
 
         <?php
+             $sessao = $_SESSION['pedido'];
              $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
              temporario_sessa= :ses");
              $consulta -> bindValue(':ses', $sessao);
@@ -38,6 +39,8 @@
                  $consultar -> execute();
                  foreach($consultar as $mostrar):
                      $produtos = $mostrar['produto_nome'];
+                     $preco = $mostrar['produto_preco'];
+                 endforeach;
         ?>
 
         <tr>
@@ -84,14 +87,54 @@
       >Excluir Produto</a></p></td>
       </tr> 
        
-       <?php endforeach; endforeach; ?>
+       <?php endforeach; ?>
        <tr>
            <td colspan="4" class="bgcolor-dark text-right color-white">Total da Compra: R$ 
            <?= number_format($total, 2, ',','.'); ?></td>
        </tr>
        </table>
-           <p class="bgcolor-red text-center btn"><a href="finalizar-pedido.php?ref=<?= 
-           $mostra['temporario_sessao']?>" class="color-white">Comprar Peça</a></p>
+            <td colspan="4" class="bgcolor-dark text-right color-white">
+              <form method="post">
+                 <button name="finalizar" value="Finalizar">Finalizar Pedido</button>
+
+                 <?php
+                   if(isset($_POST['finalizar'])):
+                    $produto = $prod;
+                    $qtde = $qtde;
+                    $price = $preco;
+                    $tot = $total;
+                    $data = date('Y-m-d H:i:s');
+                    $ses = $_SESSION['pedido'];
+
+                    $inseri = $pdo->prepare("INSERT INTO carrinho_pedidos
+                    (pedido_produto, pedido_qtde, pedido_preco, 
+                    pedido_valor_total, pedido_data, pedido_sessao) VALUES 
+                    (:product, :qt, :p, :tot, :dat, :s)");
+                    $inseri -> bindValue(':product', $produto);
+                    $inseri -> bindValue(':qt', $qtde);
+                    $inseri -> bindValue(':p', $price);
+                    $inseri -> bindValue(':tot', $tot);
+                    $inseri -> bindValue(':dat', $data);
+                    $inseri -> bindValue(':s', $ses);
+                    $inseri -> execute();
+
+                    if($inseri):
+                        echo
+                        '<script>window.location="finalizar-pedido.php"</script>';
+                    else:
+                        echo '<script>alert("Ocorreu um erro, não foi possivel
+                        finalizar este pedido")</script>';
+                        echo '<script>window.location="carrinho.php"</script>';
+                    endif;
+
+                   endif;
+                   ?>
+              </form>
+            </td>
+        
+             
+
+    </tr>
     </article>
      </section>
 </body>
