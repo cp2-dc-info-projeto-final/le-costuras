@@ -22,4 +22,19 @@
      }
      mysqli_close($conn);
  }
+ function moderador($email){
+    include_once "conexao.php";
+    $conn=get_connection();
+    if ($conn===false){
+        die("Erro de conexão".mysqli_connect_error());
+    }
+    $sql="SELECT id, moderador FROM usuario WHERE email='$email'";
+        while($row=mysqli_fetch_assoc(mysqli_query($conn, $sql))){
+            $usuario['id']=$row['id'];
+            $usuario['moderador']=$row["moderador"];
+            return $usuario; 
+    } 
+    mysqli_close($conn);
+    }
+
  
