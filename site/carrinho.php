@@ -46,22 +46,16 @@
         <tr>
             <td class="bgcolor-gray"><p class="text-center color-dark-full font-text-light">
             <?= $produtos; ?></p>
-            <input type="text" name="produto" value="<?= $produtos?>" style="display:none"
+            <input type="text" name="produto" value="<?= $produtos?>" style="display:none" 
             ></td>
             <form method="post">
             <td class="bgcolor-gray"><p class="text-center color-dark-full font-text-light">
-            <input type="text" value="<?= $mostrar['produto_qtde']?>" name="1" id=
-            "estoque" style="display:none;">
-            <input type="text" value="<?= $mostrar['produto_preco']?>" name="preco" id=
-            "preco" style="display:none;">
-                 
             <input type="number" name="id" value="<?= $mostra['temporario_id']?>" style 
             ="display:none;">
             <input type="number" name="qtde" value="<?= $mostra[
-            'temporario_qtde']?>" class="text-center" id="qtde" onchange=
-            "acrescentar()">&nbsp;<b><span id="resultado"></span></b> &nbsp;<button
-            class="color-white link-bgcolor-green-dark-b" name="alterar" value="Alterar"
-            >Alterar</button></p>
+            'temporario_qtde']?>" class="text-center">&nbsp;<button class=
+            "color-white link-bgcolor-green-dark-b" name="alterar" value="Alterar">
+             Alterar</button></p>
             
             <?php
                      if(isset($_POST['alterar'])):
@@ -94,22 +88,25 @@
        </tr>
        </table>
             <td colspan="4" class="bgcolor-dark text-right color-white">
-              <form method="post">
-                 <button name="finalizar" value="Finalizar">Finalizar Pedido</button>
+            <a href="finalizar-pedido.php?total"><form method="post">
+            <button name="finalizar" value="Finalizar">Finalizar Pedido</button>
 
                  <?php
                    if(isset($_POST['finalizar'])):
                     $produto = $prod;
-                    $qtde = $qtde;
+                    $qtde = $mostra['temporario_qtde'];
                     $price = $preco;
                     $tot = $total;
                     $data = date('Y-m-d H:i:s');
                     $ses = $_SESSION['pedido'];
-
+                    
+                    $array = array ($produto[0], $price[0], $qtde[0], $total[0]);
+                    for($i = 0;$i < count($qtde); $i++):
                     $inseri = $pdo->prepare("INSERT INTO carrinho_pedidos
                     (pedido_produto, pedido_qtde, pedido_preco, 
                     pedido_valor_total, pedido_data, pedido_sessao) VALUES 
-                    (:product, :qt, :p, :tot, :dat, :s)");
+                    ('$produto[$i]', '$qtde[$i]', '$price[$i]', '$tot[$i],
+                     '$data', '$ses')");
                     $inseri -> bindValue(':product', $produto);
                     $inseri -> bindValue(':qt', $qtde);
                     $inseri -> bindValue(':p', $price);
@@ -117,7 +114,7 @@
                     $inseri -> bindValue(':dat', $data);
                     $inseri -> bindValue(':s', $ses);
                     $inseri -> execute();
-
+                    endfor;
                     if($inseri):
                         echo
                         '<script>window.location="finalizar-pedido.php"</script>';
