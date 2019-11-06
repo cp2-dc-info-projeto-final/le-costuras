@@ -11,7 +11,7 @@
     {
         
         
-        mkdir('../imagemp/'.$insert_id.'/',true);
+        mkdir('../imagemp/'.$insert_id.'/',755, true);
         move_uploaded_file($_FILES["arquivo"]["tmp_name"],'../imagemp/'.$insert_id.'/'.$imagem);
         $msg="<p style='color:green;'>Catálogo cadastrado com sucesso</p>";
         $_SESSION["msg"]= $msg;
