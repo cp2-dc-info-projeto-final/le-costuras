@@ -1,3 +1,4 @@
+USE lecostura
 
 CREATE TABLE produto (
 	id int PRIMARY KEY  AUTO_INCREMENT,
@@ -13,7 +14,8 @@ CREATE TABLE usuario (
     email VARCHAR(100)UNIQUE,
     senha VARCHAR(100),
     confirma VARCHAR(100),
-    endereco VARCHAR (100)
+    endereco VARCHAR (100),
+    moderador BOOLEAN NOT NULL
 );
 
 CREATE TABLE carrinho_produtos (
