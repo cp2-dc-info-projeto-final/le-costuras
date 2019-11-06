@@ -15,12 +15,7 @@
         <ul>
         <li><a  href="home.php">Home</a></li>
             <li><a href="">Catálogo</a>
-                <ul>
-                        <li><a href="femininioview.php">Feminino</a></li>
-                        <li><a href="maculinoview.php">Masculino</a></li>
-                        <li><a href="infantilview.php">Infantil</a></li>
-                        <li><a href="#">Promoções</a></li>                    
-                  </ul>
+              
               </li>
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
@@ -32,6 +27,15 @@
 <br>
 
 <form  class="forc" action="cadastroctrl.php" method= "post">
+<?php
+      session_start();
+      if(array_key_exists('erro', $_SESSION) == true){
+          $erro = $_SESSION["erro"];
+          echo "<br><b>$erro</b>";
+          session_unset();
+      }
+      ?>
+      
     <h4>-</h4>
     <h2>Cadastro</h2>
     <br>
@@ -39,21 +43,16 @@
         <label for="nome">Nome:</label>
         <input class="text" type="nome" id="nome" name="nome" />
     </div>
-<br>
-    <div >
-            <label for="date">Data de Nascimento:</label>
-            <input class="DATE" type="date" id="datanasc" name="datanasc" />
-    </div>
-<br>
 
-    <div >
-            <label for="endeco">Endereço:</label>
-            <input class="text" type="endereco" id="endereco" name="endereco" />
-    </div>
 <br>
     <div >
         <label for="email">E-mail:</label>
         <input class="text" type="email" id="email" placeholder="  Ex.:usuario@gmail.com" name="email" />
+    </div>
+    <br>
+    <div >
+            <label for="endeco">Endereço:</label>
+            <input class="text" type="endereco" id="endereco" name="endereco" />
     </div>
     <br>
         <div >
@@ -72,13 +71,7 @@
         </div>
         <h4>-</h4>
         
-        <?php
-                session_start();
-                if(array_key_exists('erro', $_SESSION) == true){
-                    $erro = $_SESSION["erro"];
-                    echo "$erro";
-                }
-            ?>
+        
     
     <p>
         <a href="loginview.php">Login</a>

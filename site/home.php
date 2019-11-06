@@ -13,12 +13,7 @@
         <ul>
         <li><a  href="home.php">Home</a></li>
             <li><a href="">Catálogo</a>
-                <ul>
-                        <li><a href="femininioview.php">Feminino</a></li>
-                        <li><a href="maculinoview.php">Masculino</a></li>
-                        <li><a href="infantilview.php">Infantil</a></li>
-                        <li><a href="#">Promoções</a></li>                    
-                  </ul>
+
               </li>
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
@@ -29,14 +24,14 @@
 </html>
     <?php
     session_start();
-    if(array_key_exists('nome', $_SESSION) == false){
+    if(array_key_exists('email', $_SESSION) == false){
         $erro = "Acesso Negado!";        
         $_SESSION["erro"] = $erro;
         header('Location: loginview.php');
         exit();
     } else {
-        $nome = $_SESSION["nome"];
-        echo "Seja bem vindo $nome!<br>";
+        $email = $_SESSION["email"];
+        echo "Seja bem vindo $email!<br>";
         echo "<a href='sair.php'>Sair</a>";
     }
 ?>
