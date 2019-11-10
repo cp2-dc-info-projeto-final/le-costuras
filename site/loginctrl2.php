@@ -1,15 +1,14 @@
 <?php
- require "loginmodelo.php";
+ require "loginmoldelo.php";
  session_start();
-    $email = addslashes ($_POST["email"]);
-    $senha = addslashes ($_POST["senha"]);
-
+    $email=addslashes($_POST['email']);
+    $senha=addslashes($_POST['senha']);
     $_SESSION['email']= $email;
     session_unset();
     if (autentica($email, $senha)== true){
         session_start();
         $_SESSION['email']= $email;
-        header("Location:home.php");
+        header("Location: home.php");
         exit();
     } else{
         
