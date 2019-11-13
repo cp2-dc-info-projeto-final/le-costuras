@@ -21,10 +21,11 @@
               <table border="1" width="800">
 
         <?php
-             $sessao = $_SESSION['pedido'];
+             session_start();
+             $carrinho = $_SESSION['carrinho'];
              $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
-             temporario_sessa= :ses");
-             $consulta -> bindValue(':ses', $sessao);
+             temporario_sessao= :ses");
+             $consulta -> bindValue(':ses', $carrinho);
              $consulta -> execute();
 
              $total = 0;
