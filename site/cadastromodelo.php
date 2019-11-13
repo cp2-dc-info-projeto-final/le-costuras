@@ -21,6 +21,7 @@
         die("Erro ao efetuar o cadastro" . mysqli_error($conn));
     }
     mysqli_close($conn);
+    return true;
   
  }
  ?>
