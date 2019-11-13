@@ -6,7 +6,6 @@
     $endereco = $_POST["endereco"];
     $senha = $_POST["senha"];
     $confirma = $_POST["confirma"];
-    
     session_start();
     
 if ($senha != $confirma) {    
@@ -15,7 +14,7 @@ if ($senha != $confirma) {
     header("Location:cadastroview.php");
     exit();
 }
-if (cadastrausuario($nome, $email,$endereco, $senha, $confirma )==true){
+if (cadastrausuario($nome, $email, $endereco, $senha, $confirma )==true){
     session_unset();
     header("Location:loginview.php");
 } else {
