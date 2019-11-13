@@ -21,27 +21,30 @@
               <table border="1" width="800">
 
         <?php
-             session_start();
-             $carrinho = $_SESSION['carrinho'];
-             $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
-             temporario_sessao= :ses");
-             $consulta -> bindValue(':ses', $carrinho);
-             $consulta -> execute();
+             if (isset($_SESSION['carrinho'])) {
+                $carrinho = $_SESSION['carrinho'];
+                $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
+                temporario_sessao= :ses");
+                $consulta -> bindValue(':ses', $carrinho);
+                $consulta -> execute();
 
-             $total = 0;
-             $linhas = $consulta -> rowCount();
-             foreach($consulta as $mostra):
-             $total += $mostra['temporario_preco'];
+                $total = 0;
+                $linhas = $consulta -> rowCount();
+                foreach($consulta as $mostra) {
+                     $total += $mostra['temporario_preco'];
 
-                 $prod = $mostra['temporario_produto'];
-                 $consultar = $pdo->prepare("SELECT * FROM carrinho_produtos WHERE
-                 produto_id =:prod");
-                 $consultar -> bindValue(':prod', $prod);
-                 $consultar -> execute();
-                 foreach($consultar as $mostrar):
-                     $produtos = $mostrar['produto_nome'];
-                     $preco = $mostrar['produto_preco'];
-                 endforeach;
+                    $prod = $mostra['temporario_produto'];
+                    $consultar = $pdo->prepare("SELECT * FROM carrinho_produtos WHERE
+                    produto_id =:prod");
+                    $consultar -> bindValue(':prod', $prod);
+                    $consultar -> execute();
+                    foreach($consultar as $mostrar) {
+                        $produtos = $mostrar['produto_nome'];
+                        $preco = $mostrar['produto_preco'];
+                    }
+                
+             }
+             
         ?>
 
         <tr>
@@ -82,10 +85,10 @@
       >Excluir Produto</a></p></td>
       </tr> 
        
-       <?php endforeach; ?>
+                    <?php } ?>
        <tr>
            <td colspan="4" class="bgcolor-dark text-right color-white">Total da Compra: R$ 
-           <?= number_format($total, 2, ',','.'); ?></td>
+           <? = number_format($total, 2, ',','.'); ?></td>
        </tr>
        </table>
             <td colspan="4" class="bgcolor-dark text-right color-white">

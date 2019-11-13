@@ -4,22 +4,19 @@
 
    $produto = filter_input(INPUT_GET, 'prod');
 
-   $consulta = $pdo->prepare("SELECT * FROM carrinho_produtos WHERE produto_id = :prod");
+   $consulta = $pdo->prepare("SELECT * FROM produto WHERE id = :prod");
    $consulta -> bindValue(':prod', $produto);
    $consulta -> execute();
 
    $linhas = $consulta -> rowCount();
 
    foreach($consulta as $mostra):
-   $pre = $mostra['produto_preco'];
+   $pre = $mostra['preco'];
    endforeach;
 
-   $produto_id = $mostra['produto_id'];
-   $produto_nome = $mostra['produto_nome']
-   $produto_qtde = 1;
-   $produto_preco = $mostra['produto_preco'];
-   $produto_data = date('Y-m-d H:i:s');
-
+   $id = $mostra['id'];
+   $nome = $mostra['nome']
+   $preco = $mostra['preco'];
    $rand = rand(1000,100000);
 
    if(!$_SESSION ['pedido']):

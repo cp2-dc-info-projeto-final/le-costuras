@@ -8,6 +8,7 @@
     <head>
        <meta charset="utf-8">
        <title> Carrinho </title>
+       <link href="C:\Users\labcaxias\Desktop\electron-packager-master">
        <link href="indexcarrinho.css" rel="stylesheet">
     </head>
 
@@ -24,9 +25,12 @@
              $linhas = $consulta -> rowCount();
              */
              ?>
-             <p class="text-right"><a href="carrinho.php" class="color-white bgcolor-red
-             font-text-light font-weight-heavy car_show">Carrinho(<?php // $linhas ?>)</a></p><br>
              <h1 class="titulo">PRODUTOS</h1>
+             <p class="text-right"><a href="carrinho.php" class="color-white bgcolor-red
+             font-text-light font-weight-heavy car_show">
+             <div class="button">
+             <button type="submit" >Carrinho</button></a></p><br>
+             
           </header>
 
         <?php
@@ -49,21 +53,23 @@
              
              foreach($produtos as $produto) {
         ?>
+
+ <form class="cent"       
 <div class="produtos">
     <article class="produtosimagens">
        <h1 class="h1"><?php echo $produto['nome']?></h1>       
        <img src="<?php echo $produto['imagem']?>">
        <div class="espaco-min"></div>
-       <p class="bgcolor-gray text-center color-dark-full font-text-light-med">Por: R$
+       <p class="preco">R$        
        <?php echo number_format($produto['preco'], 2, ',', '.')?></p>
-
-       <p class="bgcolor-red text-center btn"><a href="comprar.php?prod=<?php 
-         echo $produto['id']?>" class="color-white">Comprar Peça</a>
-       </p>
+       <button class="button"><a href="comprar.php?prod=<?php 
+         echo $produto['id']?>" class="color-white">Comprar Peça</a> </button>
     </article>
       <?php } ?>
      </section>
 </div>   
+ </form>
+            
 </body>
 </html>
 
