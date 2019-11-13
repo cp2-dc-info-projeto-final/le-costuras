@@ -14,7 +14,7 @@
     if (mysqli_num_rows($result)>0){
         return false;
     } 
-    $sql="INSERT INTO usuario (nome, email, endereco, senha   ) VALUES ('$nome', '$email', '$endereco', '$hash')";
+    $sql="INSERT INTO usuario (nome, email, endereco, senha, moderador   ) VALUES ('$nome', '$email', '$endereco', '$hash', false)";
     if (mysqli_query($conn, $sql)){
         return true;
     } else{
