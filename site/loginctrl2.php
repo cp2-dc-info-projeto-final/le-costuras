@@ -8,6 +8,9 @@
     if (autentica($email, $senha)== true){
         session_start();
         $_SESSION['email']= $email;
+        $tipo=moderador($_SESSION['email']);
+        $_SESSION['moderador']=$tipo['moderador'];
+        die($_SESSION['moderador']);
         header("Location: home.php");
         exit();
     } else{

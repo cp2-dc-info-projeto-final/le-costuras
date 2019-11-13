@@ -5,11 +5,15 @@
     $senha = addslashes ($_POST["senha"]);
 
     $_SESSION['email']= $email;
-    session_unset();
     if (autentica($email, $senha)== true){
+        session_unset();
+        session_destroy();
         session_start();
         $_SESSION['email']= $email;
-        header("Location:home.php");
+        $tipo=moderador($_SESSION['email']);
+        $_SESSION['moderador']=$tipo['moderador'];
+        die($_SESSION['moderador']);
+        header("Location: home.php");
         exit();
     } else{
         

@@ -3,7 +3,7 @@
         $host="localhost";
         $user="root";
         $password="";
-        $database="lecostura";
+        $database="lecosturas";
         $conn=mysqli_connect($host, $user, $password, $database );
         mysqli_set_charset($conn,'utf8');
         return $conn;

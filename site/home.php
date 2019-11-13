@@ -18,6 +18,7 @@
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
             <li><a href="#">Carrinho</a></li>
+            <li><a href="paginaadmview.php">Administrador</a></li>
         </ul>
         
 </body>
