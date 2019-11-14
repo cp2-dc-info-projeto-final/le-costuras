@@ -1,191 +1,59 @@
-.forc { /*formatação do form "quadrado"*/
-    margin: 0 auto; 
-    width: 400px;
-    padding: 2em;
-    border: 1px solid #CCC;
-    border-radius: 3em;
-    background-color:rgba(255, 255, 250, 0.8);
+body{
+    padding: 0px;
+    margin: auto;
+    width: 100%;
 }
-.forc div + div { /*harmonizar as divs*/
-    margin-top: 1em;
-}
-
-.boo {
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	margin: 0px 0px 10px 0px;
-	border: 1px solid #87CEFA;
-	padding: 20px;
-	background: #FFF4F4;
-	box-shadow: inset 0px 0px 15px #FFE5E5;
-	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
-  -webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
-}
-
-.forp { 
-    margin: 0 auto; 
-    width: 1200px;
-    padding: 2em;
-    border: 1px solid #CCC;
-    border-radius: 3em;
-    background-color:rgba(255, 255, 250, 0.8);
-}
-
-label {
+  
+  .menu {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffde4b;
+    
+    margin: 0 auto;
     display: inline-block;
-    width: 90px;
-    text-align: right;
-
-}
-.text { /*estlizar apenas os inputs com class= text*/
-    width: 250px;
-}
-
-
-.checkbox { /*estlizar apenas os inputs com class= text*/
-    text-align: center;
-    
-   
-    
-}
-
-a {
-    display: inline-block;
-    width: 140px;
-    text-align: right;
-    padding-left: 260px;
-    text-decoration: none;
-}
-input, textarea {
-    font: 1em sans-serif;
-    
-    border-radius: 1em;
-    border: 1px solid #FFA500;
-}
-input:focus, textarea:focus {  
-    border-color: #000;
-    border-radius: 1em;
-    
-}
-textarea {
-    vertical-align: top;
-    height: 5em;
-    resize: vertical;
-    
-}
-
-
-button {
-    margin-left: 23em;
-    text-align: center;
-    background-color: gold;
-   
-    width: 80px;
-    height: 30px;
-    
-    border:none;
-    border-radius: 4px;
-
-
-
-    
-    
-
-}
-h1 {
-  color: black;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 0 auto; 
+  }
   
-  padding: 1%;
-  border: 1px solid #CCC;
-  border-radius: 2em;
- 
-  font-family: Courier, monospace;
-  font-weight: 100;
-  font-size: 300%;
-  background: -webkit-linear-gradient(left, rgba(255,255,0,0) 0%,rgba(255,255,0,0.8) 20%,rgba(255,215,0,1) 53%,rgba(255,255,0,0.8) 79%,rgba(255,255,0,0) 100%); 
-  background: linear-gradient(left, rgba(255,255,0,0) 0%,rgba(255,255,0,0.8) 20%,rgba(255,215,0,1) 53%,rgba(255,255,0,0.8) 79%,rgba(255,255,0,0) 100%); 
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-}
-
-h2 {
-  color: black;
-  
-  font-size: 250%;
-  font-weight: 100;
-  text-align: center;
- 
-  
-}
-h4{background-color: gold;
-   color: gold;
-   border-radius: 1em;
-}
-
-h1 div + div {
-    margin-top: 1em;
-}
-
-body {
-    background-image: url(boli2.png);
-}
-#menu ul{ 
-    background-color: #f5f36d;
-     
-    background-color: gold;
-    list-style:none;
-    text-align: center;
-    border-radius:1em;
-    margin-left: 17%
-    
-}
-#menu{
-     
-    border:1px solid #f19f06; 
-    border-radius:1em;
-    background-color: rgba(255,215,0);
-    text-align: center;
+    li {
+      float: left;
+      width: 25%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      margin: 0 auto;
     }
+    
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      position: relative;
+      font-size: 18px;
+      z-index: 9;
+      opacity: 0.9;
+    }
+  
+  
+  
+  
+  li.slider {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e74c3c;
+    z-index: 8;
+  }
+  
 
+.menu li :hover{
+   opacity: 0.6;
 
-#menu li{
-   position: relative; 
-   float: left;
-   border-right:1px  orange;
-   border-left:1px  orange; 
-   background-color: #f5f36d;
-        
-        }
-
-#menu li a{color:black; text-decoration:none; padding:5px 10px; display:block;}
- 
-  #menu li a:hover{
-  background: gold; 
-  color: coral;
-  box-shadow:0 3px 10px 0 black; 
-  -webkit-box-shadow:0 3px 10px 0 rgb(128, 217, 240); 
-  text-shadow:0px 0px 5px rgb(63, 241, 72); 
-        }
-
-        #menu li  ul{
-            position:absolute; 
-             
-            left:0;
-            background-color: coral; 
-            display:none;
-            } 
-
-            #menu li:hover ul, #menu li.over ul{display:block;}
-
-            #menu li ul li{
-                border:1px coral; 
-                display:block; 
-                
-                }
-.imgproduto {
-    width:40%;
-    height: 30%;
-}
+}     
