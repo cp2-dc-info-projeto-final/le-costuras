@@ -16,8 +16,6 @@
 
 
 <body>
-
-<br>
 <nav class="menu">
         <ul>
             <li><a  href="home.php">Home</a></li>
@@ -68,7 +66,7 @@
 					<div class="text-center p-t-45 p-b-4">
 						
 
-						<a href="#" class="txt2 hov1">
+						<a href="cadastroview.php" class="txt2 hov1">
 							Cadastre-se
 						</a>
 					</div>
