@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include 'conexao.php';
+    include 'conexaocarrinho.php';
+
 ?>
 
 <!doctype html>
@@ -23,6 +24,10 @@
         <?php
              if (isset($_SESSION['carrinho'])) {
                 $carrinho = $_SESSION['carrinho'];
+
+                require_once "conexaocarrinho.php";
+                $pdo = getConnection();
+              
                 $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
                 temporario_sessao= :ses");
                 $consulta -> bindValue(':ses', $carrinho);
@@ -34,13 +39,12 @@
                      $total += $mostra['temporario_preco'];
 
                     $prod = $mostra['temporario_produto'];
-                    $consultar = $pdo->prepare("SELECT * FROM carrinho_produtos WHERE
-                    produto_id =:prod");
+                    $consultar = $pdo->prepare("SELECT * FROM produto WHERE id =:prod");
                     $consultar -> bindValue(':prod', $prod);
                     $consultar -> execute();
                     foreach($consultar as $mostrar) {
-                        $produtos = $mostrar['produto_nome'];
-                        $preco = $mostrar['produto_preco'];
+                        $produtos = $mostrar['nome'];
+                        $preco = $mostrar['preco'];
                     }
                 
              }
