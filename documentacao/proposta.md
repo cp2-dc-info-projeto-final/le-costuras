@@ -1,6 +1,6 @@
 # Proposta LP4
 
-**Alunas:** Alana Porto, Eshiley Victória, Marcella Moura e Meyrielle Gomes 
+**Alunas:** Eshiley Victória, Marcella Moura e Meyrielle Gomes 
 
 **Título:** Lê Costuras
 
