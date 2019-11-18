@@ -22,16 +22,7 @@
 
 </head>
 <body>
-<?php
-    session_start();
-    if(array_key_exists('email', $_SESSION) == false){
-        $erro = "Acesso Negado!";        
-        $_SESSION["erro"] = $erro;
-        header('Location: loginview.php');
-        exit();
-    }
-	?>
-	
+
 
 <div class="container">
 			<div class="head-top">
@@ -41,7 +32,7 @@
 					  <li><a class="color1" href="#">Catálogo</a></li>	
 				      <li><a class="color1" href="#">Carrinho</a></li>
 				<li><a  href="loginview.php">Login</a></li>		
-				<li><a  href="paginaadmview.php">a</a></li>				
+				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>				
 				<li><a  href="cadastroview.php">Cadastro</a></li>
 				<li><a  href="sair.php">Sair</a></li>
 			  </ul> 
@@ -112,41 +103,41 @@
 		<h1>NOSSOS TRABALHOS</h1>
 		<div class="grid-in">
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi.jpg" alt="">
+				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/2/kfranja.jpeg" alt="">
 							<div class="b-wrapper">
 									
 								</div>
 				</a>
 		
 
-			<p><a href="single.html">Contrary to popular</a></p>
+			<p><a href="single.html">kimono com franja</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi1.jpg" alt="">
+				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/1/kestampado.jpeg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">classical Latin</a></p>
+			<p><a href="single.html">Kimono Estampado</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi2.jpg" alt="">
+				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/3/bamarela.jpeg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">undoubtable</a></p>
+			<p><a href="single.html">blusa amarela</a></p>
 			</div>
 					<div class="clearfix"> </div>
 		</div>
 		<div class="grid-in">
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi3.jpg" alt="">
+				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/4/bazul.jpeg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">suffered alteration</a></p>
+			<p><a href="single.html">blusa azul</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
 				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="gucci.jpg" alt="">
