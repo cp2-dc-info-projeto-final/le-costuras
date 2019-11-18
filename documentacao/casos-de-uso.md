@@ -15,8 +15,8 @@
 • Pré-Condição: Ser cadastrado como Administrador do site
 
 • Fluxo Principal: 
-1. Adicionar produtos em promoção à página inicial.
-2. Excluir produtos da página inicial.
+1. Adicionar produtos ao catálogo.
+2. Excluir produtos do catálogo.
 
 ### CDU2-Cadastro de Clientes
 
@@ -26,13 +26,9 @@
 
 • Fluxo Principal -
 
-1. Para criar um cadastro o cliente deverá  informar e-mail, senha, endereço completo e telefone.
+1. Para criar um cadastro o cliente deverá  informar e-mail, senha, endereço e nome de usuário.
 
 2. Caso o e-mail já estiver cadastrado o sistema mostrará com uma mensagem.
-
-3. Quando o cadastro for efetuado, o cliente receberá um e-mail com a confirmação do cadastro.
-
-4. O cliente responderá a perguntas de segurança para facilitar a recuperação da senha, caso ela seja perdida.
 
 ### CDU3-Área de Login
 
@@ -44,15 +40,9 @@
 
 1. Quando o cadastro for efetuado o site guia o cliente de volta pra página inicial.
 
-2. Com o login efetuado, o cliente poderá adicionar peças ao carrinho e também efetuar compras ou pedidos.
+2. Com o login efetuado, o cliente poderá adicionar peças ao carrinho e também efetuar compras.
 
 3. Clientes e Administradores recebem permissões de acesso diferentes.
-
-• Fluxo Alternativo:
-
-1. Caso o cliente não tenha cadastro ele será redirecionado a página de cadastro.
-
-2. Caso o cliente tenha esquecido a senha ele será redirecionado para a página de recuperação de senha.
 
 ### CDU4-Gerenciamento do catálogo
 
@@ -81,7 +71,7 @@
 •  Pré-Condição: Ter uma conta e estar logado nela
 
 •  Fluxo Principal:
-1. O cliente poderá visualizar datas disponíveis e efetuar compras ou encomendas.
+1. O cliente poderá efetuar compras.
 
-2. O administrador receberá uma notificação a cada compra ou encomenda efetuada.
+
 

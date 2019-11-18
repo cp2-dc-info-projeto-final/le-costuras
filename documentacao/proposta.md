@@ -4,12 +4,12 @@
 
 **Título:** Lê Costuras
 
-**Visão geral:** Será construído um site de costuras utilizando as linguagens HTML (para formatação do texto), CSS (para o design e interface do site), JAVA (para animações) e PHP (para bancos de dados).
+**Visão geral:** Será construído um site de costuras utilizando as linguagens HTML (para formatação do texto), CSS (para o design e interface do site), e PHP (para bancos de dados).
 
-**Objetivo:** O site tem o objetivo de que o cliente compre e encomende roupas através dele.
+**Objetivo:** O site tem o objetivo de que o cliente compre roupas através dele.
 
 **Principais Funcionalidades:**
-No site será apresentado um espaço para compra, mostrando as roupas disponíveis criadas pela própria costureira; e também um espaço para a encomenda de roupas, com que o cliente possa anexar fotos da roupa que deseja e também suas medidas.
+No site será apresentado um espaço para compra e exibição de peças confraternizadas pela stakeholder.
 
 **Stakeholder:**
 
