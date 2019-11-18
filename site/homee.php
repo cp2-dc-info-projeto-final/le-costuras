@@ -22,7 +22,16 @@
 
 </head>
 <body>
-
+<?php
+    session_start();
+    if(array_key_exists('email', $_SESSION) == false){
+        $erro = "Acesso Negado!";        
+        $_SESSION["erro"] = $erro;
+        header('Location: loginview.php');
+        exit();
+    }
+	?>
+	
 
 <div class="container">
 			<div class="head-top">
@@ -31,9 +40,10 @@
 				<ul class="memenu skyblue">
 					  <li><a class="color1" href="#">Catálogo</a></li>	
 				      <li><a class="color1" href="#">Carrinho</a></li>
-				<li><a  href="loginview.php">Login</a></li>				
+				<li><a  href="loginview.php">Login</a></li>		
+				<li><a  href="paginaadmview.php">a</a></li>				
 				<li><a  href="cadastroview.php">Cadastro</a></li>
-				<li><a  href="contact.html">Sair</a></li>
+				<li><a  href="sair.php">Sair</a></li>
 			  </ul> 
 			</div>
 				
@@ -157,18 +167,7 @@
 					<div class="clearfix"> </div>
 		</div>
 	</div>
-	<?php
-    session_start();
-    if(array_key_exists('email', $_SESSION) == false){
-        $erro = "Acesso Negado!";        
-        $_SESSION["erro"] = $erro;
-        header('Location: loginview.php');
-        exit();
-    } else {
-        $email = $_SESSION["email"];
-        echo "Seja bem vindo $email!<br>";
-        echo "<a href='sair.php'>Sair</a>";
-    }
-?>
+
+
 </body>
 </html>

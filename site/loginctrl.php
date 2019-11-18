@@ -12,7 +12,6 @@
         $_SESSION['email']= $email;
         $tipo=moderador($_SESSION['email']);
         $_SESSION['moderador']=$tipo['moderador'];
-        die($_SESSION['moderador']);
         header("Location: homee.php");
         exit();
     } else{
