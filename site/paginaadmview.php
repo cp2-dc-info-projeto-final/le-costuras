@@ -22,7 +22,7 @@ if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
 <br>
 <nav id="menu" inline >
         <ul>
-        <li><a  href="home.php">Home</a></li>
+        <li><a  href="homee.php">Home</a></li>
             <li><a href="">Catálogo</a>
               
               </li>

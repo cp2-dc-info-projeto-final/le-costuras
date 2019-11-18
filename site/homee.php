@@ -157,5 +157,18 @@
 					<div class="clearfix"> </div>
 		</div>
 	</div>
+	<?php
+    session_start();
+    if(array_key_exists('email', $_SESSION) == false){
+        $erro = "Acesso Negado!";        
+        $_SESSION["erro"] = $erro;
+        header('Location: loginview.php');
+        exit();
+    } else {
+        $email = $_SESSION["email"];
+        echo "Seja bem vindo $email!<br>";
+        echo "<a href='sair.php'>Sair</a>";
+    }
+?>
 </body>
 </html>
