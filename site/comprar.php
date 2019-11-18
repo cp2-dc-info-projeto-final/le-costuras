@@ -1,8 +1,11 @@
 <?php
     session_start();
-    include 'conexao.php';
+    include 'conexaocarrinho.php';
 
    $produto = filter_input(INPUT_GET, 'prod');
+
+   require_once "conexaocarrinho.php";
+   $pdo = criarConexao();
 
    $consulta = $pdo->prepare("SELECT * FROM produto WHERE id = :prod");
    $consulta -> bindValue(':prod', $produto);
@@ -11,12 +14,12 @@
    $linhas = $consulta -> rowCount();
 
    foreach($consulta as $mostra):
-   $pre = $mostra['preco'];
+   $preco = $mostra['preco'];
    endforeach;
 
    $id = $mostra['id'];
-   $nome = $mostra['nome']
-   $preco = $mostra['preco'];
+   $nome = $mostra['nome'];
+   $pre = $mostra['preco'];
    $rand = rand(1000,100000);
 
    if(!$_SESSION ['pedido']):
@@ -26,6 +29,8 @@
        $sessao = $_SESSION['pedido'];
    endif;
 
+   require_once "conexaocarrinho.php";
+   $pdo = criarConexao();
    $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE temporario_produto = 
    :product AND temporario_sessao = :sessao");
    $consulta -> bindValue(':product', $produto);
@@ -49,28 +54,25 @@
       $altera -> execute();
       if($altera):
          echo '<script>alert("Produto adicionado ao carrinho")</script>';
-         echo '<script>window.location="indexcarrinho.php"</script>';
+         echo '<script>window.location="carrinho.php"</script>';
         else:
          echo '<script>alert("Este produto não pôde ser adicionado ao carrinho")</script>';
-         echo '<script>window.location="indexcarrinho.php"</script>';
+         echo '<script>window.location="carrinho.php"</script>';
         endif;
    else:
-     $inserir = $pdo->prepare("INSERT INTO carrinho_temporario (temporario_produto,
-     temporario_qtde, temporario_preco, temporario_data, temporario_sessao) VALUES 
-     (:produto, :qtde, :preco, :data, :sessao)");
-     $inserir ->bindValue(':produto', $produto_id);
-     $inserir ->bindValue(':qtde', $produto_qtde);
-     $inserir ->bindValue(':preco', $produto_preco);
-     $inserir ->bindValue(':data', $produto_data);
+     $inserir = $pdo->prepare("INSERT INTO carrinho_temporario (temporario_produto, temporario_preco,  temporario_sessao) VALUES 
+     (:produto,  :preco, :sessao)");
+     $inserir ->bindValue(':produto', $id);
+     $inserir ->bindValue(':preco', $preco);
      $inserir ->bindValue(':sessao', $sessao);
      $inserir ->execute();
 
      if($inserir):
       echo '<script>alert("Produto adicionado ao carrinho")</script>';
-      echo '<script>window.location="indexcarrinho.php"</script>';
+      echo '<script>window.location="carrinho.php"</script>';
      else:
       echo '<script>alert("Este produto não pôde ser adicionado ao carrinho")</script>';
-      echo '<script>window.location="indexcarrinho.php"</script>';
+      echo '<script>window.location="carrinho.php"</script>';
      endif;
    endif;
 ?>
