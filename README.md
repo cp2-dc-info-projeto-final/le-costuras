@@ -12,13 +12,15 @@
 
 ### Sumário:
 
-### Proposta
+
+
+### 1. Proposta
 - O site tem como função a venda de roupas produzidas por Alessandra Crisóstomo.
 - Stakeholder: Alessandra Crisóstomo
 - [Proposta]
 
 
-### 1.Requisitos
+### 2 .Requisitos
 ### [Requisitos funcionais](#requisitos-funcionais)
 * [RF1](#rf1-área-inicial)
 * [RF2](#rf2-pré-cadastramento)
