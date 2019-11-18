@@ -1,7 +1,7 @@
 <?php
  
  function autentica($email, $senha) {
-     require "conexao.php";
+     include_once "conexao.php";
      $conn=get_connection();
      if ($conn===false){
          die("Erro de conexão".mysqli_connect_error());
@@ -23,7 +23,7 @@
      mysqli_close($conn);
  }
  function moderador($email){
-    require "conexao.php";
+    include_once "conexao.php";
     $conn=get_connection();
     if ($conn===false){
         die("Erro de conexão".mysqli_connect_error());
