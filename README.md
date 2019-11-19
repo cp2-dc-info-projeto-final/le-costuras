@@ -2,23 +2,14 @@
 
 ### Projeto Modelo de Projeto Final do Curso Técnico Integrado em Desenvolvimento de Sistemas do Colégio Pedro II - Campus Duque de Caxias - 2019
 
-### Integrantes:
+## Integrantes:
 - Eshiley Victória da Silva Crisóstomo
 - Marcella da Cruz Moura
 - Meyrielle Gomes do Amaral do Monte
 
-### Sumário:
-### [Proposta](#Proposta) 
-### [Requisitos](#Requisitos)
-### [Casos de Uso](#Casos-de-Uso)
-### [Modelagem](#Modelagem)
-### [Manual de Utilização](Manual-de-Utilização)
+## Proposta
 
-## [Proposta](#Proposta)
-
-**Visão geral:** Será construído um site de costuras utilizando as linguagens HTML (para formatação do texto), CSS (para o design e interface do site), e PHP (para bancos de dados).
-
-**Objetivo:** O site tem o objetivo de que o cliente compre roupas através dele.
+**Objetivo:** O site tem o objetivo de que o cliente compre roupas através dele, obtendo maior acessibilidade aos produtos.
 
 **Principais Funcionalidades:**
 No site será apresentado um espaço para compra e exibição de peças confraternizadas pela stakeholder.
@@ -27,8 +18,7 @@ No site será apresentado um espaço para compra e exibição de peças confrate
 
 - Nome: Alessandra da Silva Crisostomo 
 - Profissão: Costureira 
-- Cargo: Designer/Costureira
-- Data da entrevista: 29/04/2019
+- [Proposta](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/proposta.md)
 
 
 ## [Requisitos](#Requisitos)
