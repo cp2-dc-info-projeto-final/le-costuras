@@ -16,7 +16,6 @@
 
 • Fluxo Principal: 
 1. Adicionar produtos ao catálogo.
-2. Excluir produtos do catálogo.
 
 ### CDU2-Cadastro de Clientes
 
@@ -52,7 +51,7 @@
 
 • Fluxo Principal:
 
-1. O administrador pode adicionar/remover peças do catálogo.
+1. O administrador pode adicionar peças do catálogo.
 
 2. O administrador pode adicionar preços e descrições as peças.
 
