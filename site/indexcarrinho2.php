@@ -26,11 +26,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!--header-->
 <div class="header">
-	<div class="header-top">
+	
 		<div class="container">
 			
 				<div class="clearfix"> </div>
-		</div>
+		
 		</div>
 		<div class="container">
 			<div class="head-top">
@@ -40,7 +40,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				      <li><a class="color1" href="cadastroview.php">Cadastro</a></li>
 				    <li class="grid"><a class="loginview.php" href="#">Login</a></li>
 				<li><a class="color4" href="homee.php">Home</a></li>				
-                <li><a class="color6" href="">Carrinho</a></li>
                 <li><a class="color6" href="sair.php">Sair</a></li>
 			  </ul> 
 			</div>
@@ -94,12 +93,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				
 				</div>
-		<div class="clearfix"> </div>
-		
+        <div class="clearfix"> </div>
+        <br><br><br>
+        <a href="confirmarcompraview.php" class="item_add" id="botaofinalizar"><p class="number item_price"><i> </i>Finalizar Compra</p></a>					
+                    </div>
+                    
 		</div>
-		
+        
 		</div>
-			
+     
 				<!---->
 
 <!--//content-->

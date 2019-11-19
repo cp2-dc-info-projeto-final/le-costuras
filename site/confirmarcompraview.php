@@ -37,14 +37,6 @@
 <br>
 
 <form class="forc" action="loginctrl.php" method="post">
-  
-<?php
-      session_start();
-      if (array_key_exists('erro', $_SESSION) == true){
-        $erro = $_SESSION["erro"];
-        echo "$erro";
-        }
-    ?>
     <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
