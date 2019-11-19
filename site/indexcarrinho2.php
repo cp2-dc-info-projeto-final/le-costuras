@@ -28,23 +28,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header">
 	
 		<div class="container">
-			
-				<div class="clearfix"> </div>
-		
+			<div class="clearfix"> </div>
 		</div>
-		<div class="container">
+		    <div class="container">
 			<div class="head-top">
-				
-		  <div class=" h_menu4">
+				<div class=" h_menu4">
 				<ul class="memenu skyblue">
 				      <li><a class="color1" href="cadastroview.php">Cadastro</a></li>
-				    <li class="grid"><a class="loginview.php" href="#">Login</a></li>
-				<li><a class="color4" href="homee.php">Home</a></li>				
-                <li><a class="color6" href="sair.php">Sair</a></li>
+				        <li class="grid"><a class="color4" href="loginview.php">Login</a></li>
+				        <li><a class="color4" href="homee.php">Home</a></li>				
+                        <li><a class="color6" href="sair.php">Sair</a></li>
 			  </ul> 
 			</div>
 				
-				<div class="clearfix"> </div>
+		<div class="clearfix"> </div>
 		</div>
 		</div>
 
