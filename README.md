@@ -22,7 +22,7 @@ No site será apresentado um espaço para compra e exibição de peças confrate
 
 
 ## 2. Requisitos
-- [Requisitos]
+- [Requisitos](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/requisitos.md)
 - [Áudio da Entrevista](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/entrevista.mp3)
 - [Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/entrevista.md)
 
@@ -35,7 +35,7 @@ No site será apresentado um espaço para compra e exibição de peças confrate
 ## 4.Modelagem
 - [Diagrama de Classes](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/diagrama%20de%20classes.docx)
 - [Diagrama de Banco de Dados]
-- [Script SQL]
+- [Script SQL](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/site/lecosturas.sql)
 
 ## 5. Manual de Utilização
 - [Manual de Utilização](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/manual.md)
