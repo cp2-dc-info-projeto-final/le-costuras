@@ -27,7 +27,6 @@ CREATE TABLE usuario (
 
 CREATE TABLE carrinho_pedidos (
     pedido_id INT(10) PRIMARY KEY AUTO_INCREMENT,
-    pedido_produto INT(10),
     pedido_qtde INT(10),
     pedido_preco DECIMAL(3,2),
     pedido_cliente VARCHAR (255),

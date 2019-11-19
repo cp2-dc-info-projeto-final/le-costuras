@@ -8,7 +8,7 @@
 	  <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="formulario.css">
-<meta charset="UTF-8">
+<meta  http-equiv="Content-Type"  charset="UTF-8">
 <title>Cadastrar Catálogo</title>
 
 
