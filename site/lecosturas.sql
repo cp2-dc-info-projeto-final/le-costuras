@@ -25,24 +25,6 @@ CREATE TABLE usuario (
 );
 
 
-CREATE TABLE carrinho_pedidos (
-    pedido_id INT(10) PRIMARY KEY AUTO_INCREMENT,
-    pedido_qtde INT(10),
-    pedido_preco DECIMAL(3,2),
-    pedido_cliente VARCHAR (255),
-    pedido_data DATETIME,
-    pedido_valor_total DECIMAL (10,2),
-    pedido_sessao INT(10)
-);
 
-CREATE TABLE carrinho_temporario (
-    temporario_id INT(10) PRIMARY KEY AUTO_INCREMENT,
-    temporario_produto INT(10),
-    temporario_qtde INT(10),
-    temporario_preco DECIMAL(3,2),
-    temporario_cliente VARCHAR (255),
-    temporario_data DATETIME,
-    temporario_sessao INT(10)
-);
 
 

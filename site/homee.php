@@ -116,7 +116,7 @@
 				</a>
 		
 
-			<p><a href="single.html">kimono com franja</a></p>
+			<p><a href="single.html">kimono Mey</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
 				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/1/kestampado.jpeg" alt="">
@@ -124,7 +124,7 @@
 									
 								</div>
 				</a>
-			<p><a href="single.html">Kimono Estampado</a></p>
+			<p><a href="single.html">Kimono Natasha</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
 				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/3/bamarela.jpeg" alt="">
@@ -132,7 +132,7 @@
 									
 								</div>
 				</a>
-			<p><a href="single.html">blusa amarela</a></p>
+			<p><a href="single.html">blusa Aurora</a></p>
 			</div>
 					<div class="clearfix"> </div>
 		</div>
@@ -143,7 +143,7 @@
 									
 								</div>
 				</a>
-			<p><a href="single.html">blusa azul</a></p>
+			<p><a href="single.html">blusa celeste</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
 				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="gucci.jpg" alt="">
