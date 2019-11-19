@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include 'conexao.php';
+    include 'conexaocarrinho.php';
 ?>
 
 <!doctype html>
@@ -55,7 +55,7 @@
         ?>
 
  <form class="cent"       
-<div class="produtos">
+<div class="produto">
     <article class="produtosimagens">
        <h1 class="h1"><?php echo $produto['nome']?></h1>       
        <img src="<?php echo $produto['imagem']?>">
