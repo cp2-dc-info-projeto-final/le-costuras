@@ -23,11 +23,3 @@ CREATE TABLE usuario (
     endereco VARCHAR (100),
     moderador BOOLEAN NOT NULL
 );
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> ab009344430d810cec6534f9d44488afba9283cb
