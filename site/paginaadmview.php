@@ -28,7 +28,7 @@ if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
               </li>
             <li><a href="loginview.php">Login</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
-            <li><a href="#">Carrinho</a></li>
+          
         </ul>
         
     </nav>

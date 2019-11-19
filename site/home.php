@@ -30,7 +30,7 @@
 		  <div class=" h_menu4">
 				<ul class="memenu skyblue">
 					  <li><a class="color1" href="#">Catálogo</a></li>	
-				      <li><a class="color1" href="#">Carrinho</a></li>
+				
 				<li><a  href="loginview.php">Login</a></li>	
 				<?php
 				session_start();

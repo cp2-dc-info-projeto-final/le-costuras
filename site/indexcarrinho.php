@@ -11,11 +11,11 @@
        <link href="C:\Users\labcaxias\Desktop\electron-packager-master">
        <link href="indexcarrinho.css" rel="stylesheet">
        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-	  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-	  <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/util.css">
+       <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
     <body>
@@ -29,8 +29,8 @@
              $consulta -> bindValue(':ses', $sessao);
              $consulta -> execute();
              $linhas = $consulta -> rowCount();
-             */
-             ?>
+             
+         */?>
              <h1 class="titulo">PRODUTOS</h1>
              <p class="text-right"><a href="carrinho.php" class="color-white bgcolor-red
              font-text-light font-weight-heavy car_show">
@@ -68,7 +68,7 @@
        <div class="espaco-min"></div>
        <p class="preco">R$        
        <?php echo number_format($produto['preco'], 2, ',', '.')?></p>
-       <button class="button"><a href="comprar.php?prod=<?php 
+       <button class="button"><a href="adicionarCarrinho.php?prod=<?php 
          echo $produto['id']?>" class="color-white">Comprar Peça</a> </button>
     </article>
       <?php } ?>

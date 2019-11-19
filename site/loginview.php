@@ -21,7 +21,7 @@
             <li><a  href="homee.php">Home</a></li>
             <li><a href="">Catálogo</a></li>
             <li><a  href="cadastroview.php">Cadastro</a></li>
-            <li><a href="#">Carrinho</a></li>
+        
         </ul>
         
     </nav>
