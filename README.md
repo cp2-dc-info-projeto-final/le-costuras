@@ -11,17 +11,21 @@
 - O projeto tem o objetivo de facilitar e aumentar o número de vendas das roupas produzidas.
 
 ### Sumário:
+### [Proposta](#Proposta) 
+### [Requisitos](#Requisitos)
+### [Casos de Uso](#Casos-de-Uso)
+### [Modelagem](#Modelagem)
+### [Manual de Utilização](Manual-de-Utilização)
 
 
-
-### 1. Proposta
+## Proposta
 - O site tem como função a venda de roupas produzidas por Alessandra Crisóstomo.
 - Stakeholder: Alessandra Crisóstomo
 - [Proposta]
 
 
-### 2 .Requisitos
-### [Requisitos funcionais](#requisitos-funcionais)
+### [Requisitos](#Requisitos)
+
 * [RF1](#rf1-área-inicial)
 * [RF2](#rf2-pré-cadastramento)
 * [RF3](#rf3-área-de-cadastro-de-clientes)
@@ -70,14 +74,14 @@ O site deverá conter uma comunicação e armazenamneto direto com o banco de da
 - [Áudio da Entrevista]
 - [Entrevista Transcrita]
 
-### Casos de Uso
+### [Casos de Uso](#Casos-de-Uso)
 
 - [Casos de Uso]
 - [Diagrama de Casos de Uso - Imagem]
 - [Diagrama de Casos de Uso - Editável]
 
-### Modelagem
+### [Modelagem](Modelagem)
 - [Script SQL]
 
-### Manual de Utilização
+### [Manual de Utilização](Manual-de-Ultilização)
 - [Manual do Usuário]
