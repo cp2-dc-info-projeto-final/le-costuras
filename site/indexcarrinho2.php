@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include 'conexaocarrinho.php';
+?>
 <!--A Design by W3layouts 
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -39,7 +43,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				        <li><a class="color4" href="homee.php">Home</a></li>				
                         <li><a class="color6" href="sair.php">Sair</a></li>
 			  </ul> 
-			</div>
+            </div>
+            
+            
 				
 		<div class="clearfix"> </div>
 		</div>
@@ -65,7 +71,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 								
 							<div class="clearfix"> </div>
-							</div>
+                            </div>
+                            
+            <?php
+             require_once "conexaocarrinho.php";
+             $pdo = criarConexao();
+                          
+             $consulta = $pdo->prepare("SELECT * FROM produto");
+             $consulta->execute();
+
+             if ($consulta) {
+         
+                  $produtos = $consulta -> fetchAll();
+                  
+                  $linhas = $consulta -> rowCount();
+                  echo $linhas;
+
+             } else {
+                die($pdo->errorInfo());
+             }
+             
+             foreach($produtos as $produto) {
+            ?>
 					
 				
 <div class=" per1">
@@ -75,14 +102,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-9 product1">
 				<div class=" bottom-product">
 					<div class="col-md-4 bottom-cd simpleCart_shelfItem">
-						<div class="product-at ">
-							<a href="single.html"><img class="img-responsive" src="images/pi3.jpg" alt="">
+						<div class="produto">
+							<a href="single.html"><img class="img-responsive" src="imagemp/1/mey.jpeg" alt="">
 							<div class="pro-grid">
 										<span class="buy-in">Comprar</span>
 							</div>
 						</a>	
 						</div>
-						<p class="tun">Nome do Produto</p>
+						<p class="tun">Kimono Mey</p>
 						<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>						
 					</div>
 					
