@@ -23,9 +23,9 @@
         $inserir ->execute();
         endforeach;
         if (!$_SESSION['logado']):
-            echo '<script>window.location="loginctrl.php"</script>';
+            echo '<script>window.location="finalizarview.php"</script>';
         else:
-            echo '<script>window.location="continuar.php"</script>';
+            echo '<script>window.location="cadastroview.php"</script>';
         endif;
 ?>
 
