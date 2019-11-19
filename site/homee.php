@@ -31,8 +31,14 @@
 				<ul class="memenu skyblue">
 					  <li><a class="color1" href="#">Catálogo</a></li>	
 				      <li><a class="color1" href="#">Carrinho</a></li>
-				<li><a  href="loginview.php">Login</a></li>		
-				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>				
+				<li><a  href="loginview.php">Login</a></li>	
+				<?php
+				session_start();
+				  if (isset($_SESSION['email'])&& $_SESSION['moderador']==1){
+					  ?>
+				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
+				 <?php } ?>
+
 				<li><a  href="cadastroview.php">Cadastro</a></li>
 				<li><a  href="sair.php">Sair</a></li>
 			  </ul> 
