@@ -23,7 +23,7 @@
       die($pdo->errorInfo());
    }
    
-   
+   foreach($_SESSION["carrinho"] as $id => $qtd)
    foreach($produtos as $produto){
             
 ?>
