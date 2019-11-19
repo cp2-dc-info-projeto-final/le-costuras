@@ -8,7 +8,10 @@ if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
         <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="formulario.css">
+        <link rel="stylesheet" type="text/css" href="adminview.css">
+        <link href="css2/style.css" rel="stylesheet" type="text/css" media="all" />	
+        <link href="css2/memenu.css" rel="stylesheet" type="text/css" media="all" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
 
@@ -18,28 +21,37 @@ if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
     </head>
 
     <body>
-    <h1> LêCosturas</h1> 
 <br>
-<nav id="menu" inline >
-        <ul>
-        <li><a  href="homee.php">Home</a></li>
-            <li><a href="">Catálogo</a>
-              
-              </li>
-            <li><a href="loginview.php">Login</a></li>
-            <li><a  href="cadastroview.php">Cadastro</a></li>
-          
-        </ul>
-        
-    </nav>
+<div class="container">
+			<div class="head-top">
+				
+		  <div class=" h_menu4">
+				<ul class="memenu skyblue">
+					  <li><a class="color1" href="#">Catálogo</a></li>	
+				
+				<li><a  href="loginview.php">Login</a></li>	
+				<?php
+				  if (isset($_SESSION['email'])&& $_SESSION['moderador']==1){
+					  ?>
+				<li><a  href="paginaadmview.php">Catálogo</a></li>
+				 <?php } ?>
+
+				<li><a  href="cadastroview.php">Carrinho</a></li>
+				<li><a  href="sair.php">Sair</a></li>
+			  </ul> 
+			</div>
+				
+				<div class="clearfix"> </div>
+		</div>
+		</div>
+
+	</div>
 <br>
 <br>
 
    
 
 <form  class="forp" >
-
-        <button>Cadastrar catálogo<a  href="cadacatalogoview.php">Home</a></button>
         
            
     
