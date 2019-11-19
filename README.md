@@ -28,8 +28,8 @@ No site será apresentado um espaço para compra e exibição de peças confrate
 
 
 ## 3. Casos de Uso
-- [Casos de Uso](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/casos-de-uso.md)
 ![Casos de Uso - Diagrama](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/casosdeuso.png)
+- [Casos de Uso](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/casos-de-uso.md)
 - [Casos de Uso - Editável](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/link-casosdeuso.txt)
 
 ## 4.Modelagem
