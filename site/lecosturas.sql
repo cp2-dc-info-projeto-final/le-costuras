@@ -23,8 +23,3 @@ CREATE TABLE usuario (
     endereco VARCHAR (100),
     moderador BOOLEAN NOT NULL
 );
-
-
-
-
-
