@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
     <title>Login</title>
@@ -11,20 +11,28 @@
 	  <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link href="css2/style.css" rel="stylesheet" type="text/css" media="all" />	
+    <link href="css2/memenu.css" rel="stylesheet" type="text/css" media="all" />
     
 </head>
 
 
 <body>
-<nav class="menu">
-        <ul>
-            <li><a  href="homee.php">Home</a></li>
-            <li><a href="">Catálogo</a></li>
-            <li><a  href="cadastroview.php">Cadastro</a></li>
-            <li><a href="#">Carrinho</a></li>
-        </ul>
-        
-    </nav>
+<div class="container">
+			<div class="head-top">
+				
+		  <div class=" h_menu4">
+				<ul class="memenu skyblue">
+                <li><a  href="indexcarrinho.php">Catálogo</a></li>
+				<li><a  href="sair.php">Sair</a></li>
+			  </ul> 
+			</div>
+				
+				<div class="clearfix"> </div>
+		</div>
+		</div>
+
+	</div>
 <br>
 <br>
 
@@ -42,32 +50,39 @@
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-33">
-						Login
+						Produtos Selecionados
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+                        <p>Camisa: R$50.<br>
+                           Blusa Regata:  R$50.<br>
+                           Calça: R$120.00
+                        </p>
+                           
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
-					</div>
-
-					<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <BR>
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <p>
+                            Valor toal: R$220.00
+                        </p>
+                           
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
 
 					<div class="container-login100-form-btn m-t-20">
 						<button class="login100-form-btn">
-							Login
+							Confirmar Compra
 						</button>
 					</div>
 
 					<div class="text-center p-t-45 p-b-4">
 						
 
-						<a href="cadastroview.php" class="txt2 hov1">
-							Cadastre-se
+						<a href="indexcarrinho.php" class="txt2 hov1">
+							Voltar ao Catálogo
 						</a>
 					</div>
 				</form>
