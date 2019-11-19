@@ -19,7 +19,7 @@
 <!-- start menu -->
 <link href="css2/memenu.css" rel="stylesheet" type="text/css" media="all" />
 
-
+<link rel="sortcut icon" href="logo.png" type="image/x-icon" />
 </head>
 <body>
 
