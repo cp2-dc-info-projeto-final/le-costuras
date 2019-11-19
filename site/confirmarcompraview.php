@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Confirmar Compra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">	
 	  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -37,14 +37,6 @@
 <br>
 
 <form class="forc" action="loginctrl.php" method="post">
-  
-<?php
-      session_start();
-      if (array_key_exists('erro', $_SESSION) == true){
-        $erro = $_SESSION["erro"];
-        echo "$erro";
-        }
-    ?>
     <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
