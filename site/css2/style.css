@@ -54,6 +54,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 .item_add {
   color: #fff;
   border:none;
+  background-color: #4272d7
 }	
 a.item_add {
  text-decoration: none;
@@ -987,7 +988,7 @@ h3.tag {
   font-size: 1.7em;
   padding: 0.3em 0 0;
   display: block;
-  color:#EF5F21;
+  color:#4272d7;
 }
 span.price-in1 small {
   text-decoration: line-through;
@@ -1027,11 +1028,11 @@ a.item_add p.number{
 	font-size: 1.1em;
   color: #FFF;
   text-align: center;
-  background: #EF5F21;
+  background: #4272d7;
   padding: 0.5em 1em;
 }
 a.item_add p.number:hover{
-		background: #000;
+		background: #577ed1;
 		transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
@@ -1048,7 +1049,7 @@ a.item_add p.number i{
 }
 p.tun{
 	font-size:1em;
-	  color: #949494;
+	  color: #000000;
   text-align: center;
   line-height: 1.3em;
   padding: 1em 0;
@@ -1077,13 +1078,13 @@ p.tun{
 	color:#fff;
 	font-size:1.1em;
 	font-weight:600;
-	background:#EF5F21;
+	background:#4272d7;
 	padding: 0.5em 1.5em;
 	text-transform: uppercase;
 }
 .pro-grid span:hover{
 	background:#fff;
-	color:#EF5F21;
+	color:#577fd4;
 }
 /*--//product--*/
 /*--single--*/

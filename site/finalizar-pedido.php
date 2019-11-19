@@ -16,9 +16,9 @@
         $produto_preco = $mostra['temporario_preco'];
         $produto_data = date('Y-m-d H:i:s');
 
-        $inserir = $pdo->prepare("INSERT INTO carrinho_pedidos (pedido_produto,
+        $inserir = $pdo->prepare("INSERT INTO carrinho_pedidos (pedido_id,
         pedido_preco, pedido_qtde, pedido_valor_total, pedido_data, pedido_sessao) VALUES
-        ('$produto_id', '$produto_qtde', '$produto_preco', '$total, '$produto_data', '$sessao
+        ('$produto_id', '$produto_preco', '$produto_qtde', '$total, '$produto_data', '$sessao
         ')");
         $inserir ->execute();
         endforeach;
