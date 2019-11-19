@@ -22,7 +22,7 @@ No site será apresentado um espaço para compra e exibição de peças confrate
 
 
 ## 2. Requisitos
-- [Requisitos]
+- [Requisitos](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/requisitos.md)
 - [Áudio da Entrevista](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/entrevista.mp3)
 - [Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/entrevista.md)
 
