@@ -35,7 +35,7 @@ No site será apresentado um espaço para compra e exibição de peças confrate
 ## 4.Modelagem
 ![Diagrama de Classes](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/diagramadeclasses.png)
 - [Diagrama de Banco de Dados]
-- [Script SQL](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/site/lecosturas.sql)
+- [Script SQL](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/src/lecosturas.sql)
 
 ## 5. Manual de Utilização
 - [Manual de Utilização](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/manual.md)
