@@ -13,7 +13,7 @@ if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
         <link href="css2/memenu.css" rel="stylesheet" type="text/css" media="all" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-
+        <link rel="sortcut icon" href="logo.png" type="image/x-icon" />
 
             <title>
                 Página do Administrador

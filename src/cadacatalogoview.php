@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="formulario.css">
 <meta  http-equiv="Content-Type"  charset="UTF-8">
+<link rel="sortcut icon" href="logo.png" type="image/x-icon" />
 <title>Cadastrar Catálogo</title>
 
 

@@ -40,6 +40,7 @@
 				 <?php } ?>
 
 				<li><a  href="cadastroview.php">Cadastro</a></li>
+				<li><a  href="carrinho.php">Carrinho</a></li>
 				<li><a  href="sair.php">Sair</a></li>
 			  </ul> 
 			</div>

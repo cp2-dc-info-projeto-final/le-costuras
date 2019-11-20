@@ -10,6 +10,7 @@
 	  <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="formulario.css">
+	<link rel="sortcut icon" href="logo.png" type="image/x-icon" />
 <meta charset="UTF-8">
 <title>Cadastro</title>
 </head>

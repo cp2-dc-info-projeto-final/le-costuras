@@ -23,3 +23,19 @@ CREATE TABLE usuario (
     endereco VARCHAR (100),
     moderador BOOLEAN NOT NULL
 );
+
+CREATE TABLE venda(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    idusuario INT,
+    vtotal float,
+    foreign key (idusuario) references usuario(id)
+);
+
+CREATE TABLE ProdutoVenda(
+    id_produto int,
+    id_venda int,
+    qtd int,
+    primary key (id_produto, id_venda),
+    foreign key (id_produto) references produto(id),
+    foreign key (id_venda) references venda(id)
+);
