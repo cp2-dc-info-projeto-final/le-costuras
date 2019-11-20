@@ -2,7 +2,7 @@
 
 - Ao acessar o site, o cliente será direcionado a página home.
 
-!(https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/home1.png)
+![https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/home1.png]
 
 !(https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/home2.png)
 - O cliente deverá efetuar o cadastro inserindo as informações pedidas(Nome, Endereço, Email e Senha).
