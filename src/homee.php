@@ -38,9 +38,10 @@
 					  ?>
 				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
 				 <?php } ?>
-
+				 <li><a  href="indexcarrinho.php">Catálogo</a></li>
+				 <li><a  href="carrinho.php">Carrinho</a></li>
 				<li><a  href="cadastroview.php">Cadastro</a></li>
-				<li><a  href="carrinho.php">Carrinho</a></li>
+				
 				<li><a  href="sair.php">Sair</a></li>
 			  </ul> 
 			</div>
