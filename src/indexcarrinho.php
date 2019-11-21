@@ -71,7 +71,7 @@
        <p class="preco">R$        
        <?php echo number_format($produto['preco'], 2, ',', '.')?></p>
        <br>
-       <p class="text-right"><button class="button"><a href="adicionarCarrinho.php?prod=<?php 
+       <p class="text-right"><button class="button"><a style="color: black" href="adicionarCarrinho.php?prod=<?php 
          echo $produto['id']?>" >ADICIONAR AO CARRINHO</a> </button>
     </article>
       <?php } ?>
