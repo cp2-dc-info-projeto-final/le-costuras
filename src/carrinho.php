@@ -102,6 +102,28 @@
 
 <button class="linkback"><a style="color: black" href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
 
+<<<<<<< HEAD
+
+<!/*if(!isset($_SESSION['carrinho'])){
+    $_SESSION['carrinho'] = array();
+ }
+
+ if(isset($_GET['acao'])){
+    if($_GET['acao'] == 'del'){
+        $id = intval($_GET['id_produto']);
+        if(isset($_SESSION['carrinho'][$id])){
+          unset($_SESSION['carrinho'][$id]);
+        }
+     }
+       
+    
+  }         
+    
+echo!>
+<button class="button"><a href="">Limpar Carrinho</a></button>
+<button class="button"><a href="">Finalizar Compra</a></button>
+=======
 
 </body>
 </html>
+>>>>>>> 3c817f444e7b0b60a4e8edffdd807f9191094f77
