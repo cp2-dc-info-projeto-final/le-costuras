@@ -9,6 +9,19 @@
         session_unset();
         session_destroy();
         session_start();
+        $conn=get_connection();
+        if ($conn===false){
+            die("Erro de conexão".mysqli_connect_error());
+        }
+        $sql= "SELECT id FROM usuario WHERE email='$email'";
+                $result= mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result)>0){
+                    $row=mysqli_fetch_assoc($result);
+                    if (!isset($_SESSION["id"])) {
+                        $_SESSION["id"] = $row["id"];
+                    }
+                    
+                }
         $_SESSION['email']= $email;
         $tipo=moderador($_SESSION['email']);
         $_SESSION['moderador']=$tipo['moderador'];

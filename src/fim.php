@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
        <meta charset="utf-8">
-       <title> Carrinho </title>
+       <title> Check Out </title>
        <link href="C:\Users\labcaxias\Desktop\electron-packager-master">
        <link href="carrinho.css" rel="stylesheet">
        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -58,32 +58,27 @@
     </tr>
 
 
+
 <?php
-        
-    include 'conexaocarrinho.php';
-    $pdo = criarConexao();
-    if(count($_SESSION['carrinho']) == 0){
-        echo '<tr><td colspan="5">Não há produto no carrinho</td></tr>';}
-    
-    
-    $consulta = $pdo->prepare("SELECT * FROM produto");
-    $consulta->execute();
-    if ($consulta) {
-         
-        $produtos = $consulta -> fetchAll();
-        
-   } else {
-      die($pdo->errorInfo());
-   }
+session_start();
+try {
+  $conn = new PDO('mysql:host=localhost;dbname=lecosturas', 'root', '');
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo 'ERROR: ' . $e->getMessage();
+}
+   
    $vtotal = 0;
    $idprod = "";
    $prodqnt = 0;
    $subtotal = 0;
    $idusuario = $_SESSION['id'];
-   foreach($_SESSION["carrinho"] as $id => $qtd)
+   #echo $idusuario;
+      
+   foreach($_SESSION['carrinho'] as $idd => $qtd)
    foreach($produtos as $produto){
-    if($produto['id'] == $id){
-        $idprod = $id;
+    if($produto['id'] == $idd){
+        $idprod = $idd;
         $prodqnt = $qtd;
 
 ?>
@@ -107,9 +102,39 @@
     
     <?php 
  $vtotal += $subtotal;
- } } 
-    ?>
+ #echo $vtotal;
  
+    }
+}
+    #$idusuario = $_SESSION['id'];
+    $stmt = $conn->prepare('INSERT INTO venda(idusuario, vtotal) VALUES(:usuario,:total)');
+    $stmt->execute(array(
+        ':usuario' => $idusuario,
+        ':total' => $vtotal
+      ));
+      echo $stmt->rowCount();
+      #echo $idusuario;
+      echo $vtotal;
+    #while($row = $stmt->fetch()) {
+       # print_r($row);
+    #}
+
+    $sql = "SELECT MAX(id) FROM venda;";
+    $statement = $conn->prepare($sql);
+    $statement->execute(); // no need to add `$sql` here, you can take that out
+    $item_id = $statement->fetchColumn();
+    echo $item_id;
+
+    
+    #print($_GET[id]);
+    #print($_GET[vtotal]);
+    #print($_GET[idprod]);
+    #print($_GET[qnt]);
+    #print($row1);
+    
+
+?>
+
 </table>
 <br><br>
 
@@ -125,8 +150,4 @@ echo number_format ($vtotal, 2, ',', '.')
 
 </body>
 </html>
-
-
-
-
 
