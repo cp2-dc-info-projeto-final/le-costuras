@@ -4,23 +4,40 @@
     align-items: center;
    
 }
+  
 
-button {
-    margin-left: 5em;
-    text-align: center;
-    background-color: gold;
-   
-    width: 80px;
-    height: 30px;
-    
-    border:none;
-    border-radius: 4px;
+.button {
+    border-top: 1px solid #ff6d1f;
+    background: #ff6d1f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff6d1f), to(#ff6d1f));
+    background: -webkit-linear-gradient(top, #ff6d1f, #ff6d1f);
+    background: -moz-linear-gradient(top, #ff6d1f, #ff6d1f);
+    background: -ms-linear-gradient(top, #ff6d1f, #ff6d1f);
+    background: -o-linear-gradient(top, #ff6d1f, #ff6d1f);
+    padding: 13px 26px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: white 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 10px;
 }
+
+
+
+
 .titulo{
     color: black;
     box-sizing: border-box;
     text-align: center;
-    margin: 0 auto; 
+    margin: 10px; 
     
     padding: 1%;
     border: 1px solid #CCC;
@@ -29,37 +46,37 @@ button {
     font-family: Courier, monospace;
     font-weight: 100;
     font-size: 300%;
-    background: -webkit-linear-gradient(left, rgba(255,255,0,0) 0%,rgba(255,255,0,0.8) 20%,rgba(255,215,0,1) 53%,rgba(255,255,0,0.8) 79%,rgba(255,255,0,0) 100%); 
-    background: linear-gradient(left, rgba(255,255,0,0) 0%,rgba(255,255,0,0.8) 20%,rgba(255,215,0,1) 53%,rgba(255,255,0,0.8) 79%,rgba(255,255,0,0) 100%); 
+    background: #ff6d1f; 
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
             
 .produtos{
     display: inline-block;
+    width: inline-block;
+    padding: 10px;
 }
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     display: inline-block;
     display: inline-block;
     justify-content: center;
     align-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 .produtosimagens{
     display: inline-block;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    width: inline-block;
 }
 
 .h1{
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 .preco{
@@ -67,7 +84,8 @@ img{
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 34%;
+    color: black;
 
 }
 
@@ -76,8 +94,14 @@ img{
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-left: 25%;
-
-
+    margin-left: 18%;
 }
+
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
 
