@@ -14,26 +14,43 @@
        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-       <link rel="stylesheet" type="text/css" href="css/util.css">
+  
        <link rel="stylesheet" type="text/css" href="css/main.css">
+       <link rel="stylesheet" type="text/css" href="css2/memenu.css">
+       <link rel="stylesheet" type="text/css" href="css2/syle.css">
        <link rel="sortcut icon" href="logo.png" type="image/x-icon" />
        
        
     </head>
 
     <body>
+    <section class="menusuperior">
+       <div class=" h_menu4">
+				<ul class="memenu skyblue">
+					  <li><a class="color1" href="indexcarrinho.php">Catálogo</a></li>	
+				
+				<li><a  href="loginview.php">Login</a></li>	
+				<?php
+				  if (isset($_SESSION['email'])&& $_SESSION['moderador']==1){
+					  ?>
+				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
+				 <?php } ?>
+				 <li><a  href="indexcarrinho.php">Catálogo</a></li>
+				 <li><a  href="carrinho.php">Carrinho</a></li>
+				<li><a  href="cadastroview.php">Cadastro</a></li>
+				
+				<li><a  href="sair.php">Sair</a></li>
+			  </ul> 
+			</div>
+          <br><br>
+
+   </section>
+
+
+
        <section>
           <header>
-          <?php
-          /*
-             $sessao = $_SESSION['pedido'];
-             $consulta = $pdo->prepare("SELECT * FROM carrinho_temporario WHERE
-             temporario_sessa= :ses");
-             $consulta -> bindValue(':ses', $sessao);
-             $consulta -> execute();
-             $linhas = $consulta -> rowCount();
-             
-         */?>
+
 
              <h1 class="titulo">PRODUTOS</h1>
              <p class="text-right"><a href="carrinho.php" >
