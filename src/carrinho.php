@@ -54,21 +54,22 @@
 
 <button class="button"><a href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
 
-<?php
-if(!isset($_SESSION['carrinho'])){
+
+<!/*if(!isset($_SESSION['carrinho'])){
     $_SESSION['carrinho'] = array();
  }
 
  if(isset($_GET['acao'])){
     if($_GET['acao'] == 'del'){
-        $id_produto = intval($_GET['id_produto']);
-        if(isset($_SESSION['carrinho'][$id_produto])){
-          unset($_SESSION['carrinho'][$id_produto]);
+        $id = intval($_GET['id_produto']);
+        if(isset($_SESSION['carrinho'][$id])){
+          unset($_SESSION['carrinho'][$id]);
         }
      }
        
     
   }         
     
-echo
-'<button class="button"><a href="?acao=del&id_produto='.$id_produto.'">Remover</a></button>';?>
+echo!>
+<button class="button"><a href="">Limpar Carrinho</a></button>
+<button class="button"><a href="">Finalizar Compra</a></button>
