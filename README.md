@@ -41,3 +41,6 @@ No site será apresentado um espaço para compra e exibição de peças confrate
 
 ## 5. Manual de Utilização
 - [Manual de Utilização](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/documentacao/manual.md)
+
+## 6. Slides
+- [Slide](https://github.com/cp2-dc-info-projeto-final/le-costuras/blob/master/slide.pdf)
