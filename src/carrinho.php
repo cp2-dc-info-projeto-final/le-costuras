@@ -61,6 +61,8 @@
         
     include 'conexaocarrinho.php';
     $pdo = criarConexao();
+    if(count($_SESSION['carrinho']) == 0){
+        echo '<tr><td colspan="5">Não há produto no carrinho</td></tr>';}
     
     
     $consulta = $pdo->prepare("SELECT * FROM produto");
@@ -99,6 +101,7 @@
 <br><br>
 
 <button class="linkback"><a style="color: black" href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
+
 
 </body>
 </html>
