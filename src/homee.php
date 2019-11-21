@@ -38,7 +38,6 @@
 					  ?>
 				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
 				 <?php } ?>
-				 <li><a  href="indexcarrinho.php">Catálogo</a></li>
 				 <li><a  href="carrinho.php">Carrinho</a></li>
 				<li><a  href="cadastroview.php">Cadastro</a></li>
 				
@@ -73,7 +72,7 @@
 						<div class="banner-text">
 							<h3>SEJA BEM-VINDO À LÊ COSTURAS</h3>
 						<br>
-						<a href="single.html">Ver Catálogo</a>
+						<a href="indexcarrinho.php">Ver Catálogo</a>
 						</div>
 				
 				</li>
@@ -83,7 +82,7 @@
 							<h3>PEÇAS SOB ENCOMENDA</h3>
 						<p>Na Lê Costuras você pode encomendar suas roupas por um preço baixo e com um serviço de ótima qualidade!</p>
 						<br>	
-						<a href="single.html">Ver Catálogo</a>
+						<a href="indexcarrinho.php">Ver Catálogo</a>
 
 						</div>
 					
@@ -93,7 +92,7 @@
 							<h3>PROMOÇÕES EXCLUSIVAS</h3>
 						<p>Fique ligado em nosso site e não perca nossas incríveis promoçoes!</p>
 						<br>
-								<a href="single.html">Ver Catálogo</a>
+								<a href="indexcarrinho.php">Ver Catálogo</a>
 
 						</div>
 					
