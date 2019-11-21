@@ -13,6 +13,8 @@
         session_start();
     include 'conexaocarrinho.php';
     $pdo = criarConexao();
+    if(count($_SESSION['carrinho']) == 0){
+        echo '<tr><td colspan="5">Não há produto no carrinho</td></tr>';}
     
     
     $consulta = $pdo->prepare("SELECT * FROM produto");
@@ -51,3 +53,22 @@
 </table>
 
 <button class="button"><a href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
+
+<?php
+if(!isset($_SESSION['carrinho'])){
+    $_SESSION['carrinho'] = array();
+ }
+
+ if(isset($_GET['acao'])){
+    if($_GET['acao'] == 'del'){
+        $id_produto = intval($_GET['id_produto']);
+        if(isset($_SESSION['carrinho'][$id_produto])){
+          unset($_SESSION['carrinho'][$id_produto]);
+        }
+     }
+       
+    
+  }         
+    
+echo
+'<button class="button"><a href="?acao=del&id_produto='.$id_produto.'">Remover</a></button>';?>
