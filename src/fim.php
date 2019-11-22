@@ -1,8 +1,12 @@
 <?php 
 require_once "conexao.php";
 session_start();
+if (isset($_SESSION["id"])) {
+    $idusuario = $_SESSION["id"];
+} else {
+    header("Location: cadastroview.php");
+}
 $carrinho = $_SESSION["carrinho"];
-$idusuario = $_SESSION["id"];
 $dataa = date ("Y-m-d");
 $vtotal = $_SESSION["vtotal"];
 
