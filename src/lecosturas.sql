@@ -27,6 +27,7 @@ CREATE TABLE usuario (
 CREATE TABLE venda(
     id INT PRIMARY KEY AUTO_INCREMENT,
     idusuario INT,
+    dataa date,
     vtotal float,
     foreign key (idusuario) references usuario(id)
 );

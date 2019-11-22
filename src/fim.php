@@ -1,14 +1,27 @@
 <?php 
-function ReceberCarrinho(){
-    require_once "carrinho.php";
-    $inserir = 'INSERT INTO venda (idusuario,vtotal;)
-                VALUES (:idusuario, :vtotal,)';
-    $consulta = $con->prepare($inserir);
-    $consulta ->bindValue(':idusuario', $idusuario, PDO::PARAM_STR);
-    $consulta ->bindValue(':vtotal', $vtotal, PDO::PARAM_STR);
-    $consulta->execute();
-    if($consulta->rowCount() == 0){
-        $error_list[] = "Ocorreu algo de errado!";
+require_once "conexao.php";
+
+start_session();
+$carrinho = $_SESSION["carrinho"];
+
+function FinalizarCompra($carrinho){
+
+    $inserir = 'INSERT INTO venda (idusuario, dataa, vtotal) VALUES ('$idusuario', '$dataa', '$vtotal');'
+    if (!$consulta->execute()) {
+        die(mysqli_error($con));   
     }
+
+    $id_venda = mysqli_insert_id($con);
+
+    foreach ($carrinho as $id_produto => $quantidade) {
+                //inserir em produto venda: id_venda, id_produto, quantidade
+                $inserir = 'INSERT INTO ProdutoVenda (id_produto, id_venda) VALUES ('$id_produto', '$id_venda');'
+                if (!$consulta->execute()) {
+                    die(mysqli_error($con));   
+                }
+            
+                $id_venda = mysqli_insert_id($con); }
+    
+
 }
     ?>

@@ -115,8 +115,8 @@
 <button class="linkback"><a style="color: black" href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
 
 
-<button class="button"><a href="limparcarrinho.php">Limpar Carrinho</a></button>
-<button class="button"><a href="fim.php" >Finalizar Compra</a></button>
+<button class="linkback"><a style="color: black" href="limparcarrinho.php">Limpar Carrinho</a></button>
+<button class="linkback"><a style="color: black" href="fim.php" >Finalizar Compra</a></button>
 
 <?php 
 echo number_format ($vtotal, 2, ',', '.')
