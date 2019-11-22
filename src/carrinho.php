@@ -93,8 +93,7 @@
 ?>
 
     <tr>
-    <td> <?php 
-        echo $produto['nome']?></td>
+    <td> <?php echo $produto['nome']?></td>
             <td> R$ <?php echo number_format ($produto['preco'], 2, ',', '.')?></td>
             <td> <?php echo $qtd; ?></td>
             <td><a style="color: black" href="adicionarCarrinho2.php?prod=<?php 
