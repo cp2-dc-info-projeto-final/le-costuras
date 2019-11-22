@@ -1,0 +1,67 @@
+.h1{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   
+}
+
+.titulo{
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px; 
+    
+    padding: 1%;
+    border: 1px solid #CCC;
+    border-radius: 2em;
+   
+    font-family: Courier, monospace;
+    font-weight: 100;
+    font-size: 300%;
+    background: #ff6d1f; 
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+    table {
+        margin-top: 5%; 
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #ff6d1f;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: Center;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color:  rgba(235, 235, 235, 0.815);
+        opacity: 0.9
+      }
+
+      
+      .linkback {
+        border-top: 1px solid #ff6d1f;
+        background: #ff6d1f;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff6d1f), to(#ff6d1f));
+        background: -webkit-linear-gradient(top, #ff6d1f, #ff6d1f);
+        background: -moz-linear-gradient(top, #ff6d1f, #ff6d1f);
+        background: -ms-linear-gradient(top, #ff6d1f, #ff6d1f);
+        background: -o-linear-gradient(top, #ff6d1f, #ff6d1f);
+        padding: 13px 26px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        
+        box-shadow: white 0 1px 0;
+        text-shadow: rgba(0,0,0,.4) 0 1px 0;
+
+        font-size: 17px;
+        font-family: Georgia, serif;
+        vertical-align: middle;
+        margin: 10px;
+        text-decoration: #ff6d1f;
+    }
+
