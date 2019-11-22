@@ -19,7 +19,7 @@
 <nav class="menu">
         <ul>
             <li><a  href="homee.php">Home</a></li>
-            <li><a href="">Catálogo</a></li>
+            <li><a href="indexcarrinho.php">Catálogo</a></li>
             <li><a  href="loginview.php">Login</a></li>
            
         </ul>

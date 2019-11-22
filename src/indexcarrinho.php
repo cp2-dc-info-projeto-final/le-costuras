@@ -70,7 +70,7 @@
                   $produtos = $consulta -> fetchAll();
                   
                   $linhas = $consulta -> rowCount();
-                  echo $linhas;
+                  
 
              } else {
                 die($pdo->errorInfo());

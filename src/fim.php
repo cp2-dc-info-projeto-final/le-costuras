@@ -3,7 +3,7 @@ require_once "conexao.php";
 session_start();
 $carrinho = $_SESSION["carrinho"];
 $idusuario = $_SESSION["id"];
-$dataa = date ("Y-m-d");
+$dataa = date ("Y/m/d");
 $vtotal = $_SESSION["vtotal"];
 
 
@@ -32,4 +32,5 @@ function FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal){
 }
 
 FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal);
+
 ?>
