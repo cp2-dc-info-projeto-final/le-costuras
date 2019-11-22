@@ -35,7 +35,7 @@ function FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal){
 if(FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal)) {
     unset($_SESSION["carrinho"]);
     echo("Compra concluída!");
-    echo("<a href='encomenda.php'>Voltar</a>");
+    echo("<a href='homee.php'>Voltar</a>");
 }
 
 ?>

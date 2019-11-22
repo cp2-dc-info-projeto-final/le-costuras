@@ -38,6 +38,7 @@ if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
         <li><a  href="carrinho.php">Carrinho</a></li>
         <li><a  href="homee.php">Home</a></li>
         <li><a  href="cadacatalogoview.php">Catalogar Peças</a></li>
+        <li><a  href="encomendas.php">ENCOMENDAS</a></li>
 				<li><a  href="sair.php">Sair</a></li>
 			  </ul> 
 			</div>
