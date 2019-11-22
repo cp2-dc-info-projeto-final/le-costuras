@@ -3,7 +3,7 @@ require_once "conexao.php";
 session_start();
 $carrinho = $_SESSION["carrinho"];
 $idusuario = $_SESSION["id"];
-$dataa = date ("Y/m/d");
+$dataa = date ("Y-m-d");
 $vtotal = $_SESSION["vtotal"];
 
 
@@ -20,7 +20,7 @@ function FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal){
             $sql = "INSERT INTO ProdutoVenda (id_produto, id_venda, qtd) VALUES ($id_produto, $id_venda, $quantidade)";
             $result = mysqli_query($conn, $sql);
             if ($result) {
-                header("Location:homee.php");
+                return true;
                 
             } else {
                 die(mysqli_error($conn));
@@ -28,9 +28,14 @@ function FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal){
         }
     } else {
         die(mysqli_error($conn));
+        return false;
     }    
 }
 
-FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal);
+if(FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal)) {
+    unset($_SESSION["carrinho"]);
+    echo("Compra concluída!");
+    echo("<a href='homee.php'>Voltar</a>");
+}
 
 ?>
