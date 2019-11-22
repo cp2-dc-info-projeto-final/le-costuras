@@ -7,17 +7,11 @@
  if (!isset($_SESSION["carrinho"])) {
      $_SESSION["carrinho"] = [];
  }
-      
- if ($_SESSION['carrinho'][$id_produto] > 0)
- {
-   unset($_SESSION['carrinho']);
- }
+
+  session_reset();
+ 
 
 
         header("Location: carrinho.php");
      
-       
-    
-         
-       
-?>
+?>      

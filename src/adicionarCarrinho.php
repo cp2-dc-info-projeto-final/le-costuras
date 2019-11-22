@@ -14,6 +14,6 @@
         $_SESSION["carrinho"][$id_produto] = 1;
     }
 
-    header("Location: carrinho.php");
+    header("Location: indexcarrinho.php");
     exit();
 ?>

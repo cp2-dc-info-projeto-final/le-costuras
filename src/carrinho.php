@@ -62,8 +62,7 @@
         
     include 'conexaocarrinho.php';
     $pdo = criarConexao();
-    if(count($_SESSION['carrinho']) == 0){
-        echo '<tr><td colspan="5">Não há produto no carrinho</td></tr>';}
+  
     
     
     $consulta = $pdo->prepare("SELECT * FROM produto");
@@ -79,7 +78,7 @@
    $idprod = "";
    $prodqnt = 0;
    $subtotal = 0;
-   $idusuario = $_SESSION['id'];
+  
    foreach($_SESSION["carrinho"] as $id => $qtd)
    foreach($produtos as $produto){
     if($produto['id'] == $id){
@@ -93,7 +92,7 @@
         echo $produto['nome']?></td>
             <td> R$ <?php echo number_format ($produto['preco'], 2, ',', '.')?></td>
             <td> <?php echo $qtd; ?></td>
-            <td><a style="color: black" href="adicionarCarrinho.php?prod=<?php 
+            <td><a style="color: black" href="adicionarCarrinho2.php?prod=<?php 
          echo $produto['id']?>" class="color-white">Adicionar Peça</a></td>
           <td><a style="color: black" href="tirarcarrinho.php?prod=<?php 
          echo $produto['id']?>" class="color-white">Remover Peça</a></td>
@@ -116,7 +115,7 @@
 <button class="linkback"><a style="color: black" href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
 
 
-<button class="button"><a href="">Limpar Carrinho</a></button>
+<button class="button"><a href="limparcarrinho.php">Limpar Carrinho</a></button>
 <button class="button"><a href="fim.php" >Finalizar Compra</a></button>
 
 <?php 

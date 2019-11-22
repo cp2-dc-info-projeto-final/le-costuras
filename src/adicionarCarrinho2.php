@@ -9,16 +9,11 @@
     }
 
     if (isset($_SESSION["carrinho"][$id_produto])) {
-        $_SESSION["carrinho"][$id_produto] -= 1;
+        $_SESSION["carrinho"][$id_produto] += 1;
     } else  {
         $_SESSION["carrinho"][$id_produto] = 1;
     }
-    if ($_SESSION['carrinho'][$id_produto] == 0)
-    {
-      unset($_SESSION['carrinho'][$id_produto]);
-    }
-   
-    header("Location: carrinho.php");
 
+    header("Location:carrinho.php");
     exit();
 ?>
