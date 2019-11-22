@@ -59,7 +59,11 @@
 
 
 <?php
-        
+      
+      if (!isset($_SESSION["carrinho"])) {
+        $_SESSION["carrinho"] = [];
+    }
+
     include 'conexaocarrinho.php';
     $pdo = criarConexao();
     if(count($_SESSION['carrinho']) == 0){
