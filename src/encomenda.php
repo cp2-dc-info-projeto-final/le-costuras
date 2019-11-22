@@ -103,13 +103,21 @@
 ?>
 
     <div>
-        <?php echo $venda["id"]; ?><br>
-        <?php echo $venda["nome"]; ?><br>
-        <?php echo $venda["email"]; ?><br>
-        <?php echo $venda["endereco"]; ?><br>
-        <?php echo $venda["dataa"]; ?><br>
-        <?php echo $venda["vtotal"]; ?><br>
         <table>
+        <tr>
+                <th> Cliente </th>
+                <th> E-Mail </th>
+                <th> Endereço </th>
+                <th> Data </th>
+                <th> Valor Total </th>
+            </tr>
+            <tr>
+            <td> <?php echo $venda["nome"]; ?> </td>
+            <td> <?php echo $venda["email"]; ?> </td>
+            <td> <?php echo $venda["endereco"]; ?> </td>
+            <td> <?php echo $venda["dataa"]; ?>  </td>
+            <td> R$ <?php echo number_format ($venda['vtotal'], 2, ',', '.')?></td>
+      
             <tr>
                 <th> Produto </th>
                 <th> Preço </th>
@@ -124,9 +132,9 @@
                 <td> <?php echo $produto["nome"]; ?> </td>
                 <td> <?php echo $produto["preco"]; ?> </td>
                 <td> <?php echo $produto["qtd"]; ?> </td>
-                <td> <?php echo $produto["preco"] * $produto["qtd"]; ?> </td>
+                <td> R$ <?php echo number_format ($produto['preco'] * $produto['qtd'], 2, ',', '.') ?> 
             </tr>
-            </table>
+            
 
             <?php
                 }    
@@ -135,5 +143,6 @@
 <?php
  }
 ?>
+</table>
 
  
