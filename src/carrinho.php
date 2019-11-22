@@ -113,7 +113,8 @@
  } } 
 
  $_SESSION["vtotal"] = $vtotal;
-?>
+ ?>
+ 
  
 </table>
 <br><br>
@@ -127,6 +128,7 @@
 <?php 
 echo number_format ($vtotal, 2, ',', '.');
  ?>
+ 
 
 </body>
 </html>
