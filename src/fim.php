@@ -21,6 +21,7 @@ function FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal){
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 header("Location:homee.php");
+                
             } else {
                 die(mysqli_error($conn));
             }   

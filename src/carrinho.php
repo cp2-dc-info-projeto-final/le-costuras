@@ -30,7 +30,7 @@
 				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
 				 <?php } ?>
 	        	 <li><a  href="homee.php">Home</a></li>
-				 <li><a  href="carrinholi.php">Carrinho</a></li>
+				 <li><a  href="carrinho.php">Carrinho</a></li>
 				<li><a  href="cadastroview.php">Cadastro</a></li>
 				
 				<li><a  href="sair.php">Sair</a></li>
@@ -118,7 +118,7 @@
 <button class="linkback"><a style="color: black" href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
 
 
-<button class="linkback"><a style="color: black" href="">Limpar Carrinho</a></button>
+<button class="linkback"><a style="color: black" href="limparcarrinho.php">Limpar Carrinho</a></button>
 <button class="linkback"><a style="color: black" href="fim.php" >Finalizar Compra</a></button>
 
 <?php 

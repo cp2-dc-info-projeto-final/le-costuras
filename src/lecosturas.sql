@@ -9,7 +9,7 @@ CREATE TABLE produto (
 );
 
 INSERT INTO produto (id, nome, preco, descricao, imagem) VALUES 
-(1, 'kimono Natasha', 40, 'Kimono branco de mangas curtas estampado com tigres pretos', 'imagemp/1/kestampado.jpeg'),
+(1, 'Kimono Natasha', 40, 'Kimono branco de mangas curtas estampado com tigres pretos', 'imagemp/1/kestampado.jpeg'),
 (2, 'Kimono Mey', 40, 'Kimono preto de mangas curtas com franjas na parte inferior', 'imagemp/2/kfranja.jpeg'),
 (3, 'Blusa Aurora', 30, 'Blusa amarela sem mangas com decote em U', 'imagemp/3/bamarela.jpeg'),
 (4, 'Blusa Celeste', 30, 'Blusa azul com alças presas por botões', 'imagemp/4/bazul.jpeg'); 
