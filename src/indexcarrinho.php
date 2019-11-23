@@ -90,10 +90,10 @@
        <br>
        <p class="text-right"><button class="button"><a style="color: black" href="adicionarCarrinho.php?prod=<?php 
          echo $produto['id']?>" >ADICIONAR AO CARRINHO</a> </button>
-    </article>
+    </article></div> 
     <?php } ?>
      </section>
-</div>   
+  
 <div class="container body-content">
        <footer class="footer">
         <hr />
