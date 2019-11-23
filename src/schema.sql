@@ -12,7 +12,11 @@ INSERT INTO produto (id, nome, preco, descricao, imagem) VALUES
 (1, 'Kimono Natasha', 40, 'Kimono branco de mangas curtas estampado com tigres pretos', 'imagemp/1/kestampado.jpeg'),
 (2, 'Kimono Mey', 40, 'Kimono preto de mangas curtas com franjas na parte inferior', 'imagemp/2/kfranja.jpeg'),
 (3, 'Blusa Aurora', 30, 'Blusa amarela sem mangas com decote em U', 'imagemp/3/bamarela.jpeg'),
-(4, 'Blusa Celeste', 30, 'Blusa azul com alças presas por botões', 'imagemp/4/bazul.jpeg'); 
+(4, 'Blusa Celeste', 30, 'Blusa azul com alças presas por botões', 'imagemp/4/bazul.jpeg'),
+(5, 'Vestido Gabi', 30, 'Vestido infantil sem mangas em listras pretas, brancas e beges.', 'imagemp/5/vesinf.jpg'),
+(6, 'Kimono Angel', 40, 'Kimono de magas, em renda branca com detalhes em flores.', 'imagemp/6/krenda.jpg'),
+(7, 'Blusa Katy', 30, 'Blusa preta em alças finas e decote em U, com estampa delicada em flores.', 'imagemp/7/bpreta.jpg'),
+(8, 'Pantalona Patricia', 40, 'Calça pantalona longa em listras verticais com cinto de tecido incluso.', 'imagemp/8/calca.jpg');
 
 CREATE TABLE usuario (
     id INT PRIMARY KEY AUTO_INCREMENT,
