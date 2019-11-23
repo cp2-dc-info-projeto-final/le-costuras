@@ -22,18 +22,18 @@ function FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal){
         foreach ($carrinho as $id_produto => $quantidade) {
             //inserir em produto venda: id_venda, id_produto, quantidade
             $sql = "INSERT INTO ProdutoVenda (id_produto, id_venda, qtd) VALUES ($id_produto, $id_venda, $quantidade)";
-            $result = mysqli_query($conn, $sql);
-            if ($result) {
-                return true;
-                
-            } else {
+            $result2 = mysqli_query($conn, $sql);
+            if (!$result2){
                 die(mysqli_error($conn));
-            }   
+            }
         }
+
+        return true;
     } else {
         die(mysqli_error($conn));
         return false;
-    }    
+    }
+    
 }
 
 if(FinalizarCompra($carrinho, $idusuario, $dataa, $vtotal)) {
