@@ -91,15 +91,18 @@
        <p class="text-right"><button class="button"><a style="color: black" href="adicionarCarrinho.php?prod=<?php 
          echo $produto['id']?>" >ADICIONAR AO CARRINHO</a> </button>
     </article>
-      <?php } ?>
+    <?php } ?>
      </section>
 </div>   
 <div class="container body-content">
-       <footer class="fixarRodape">
+       <footer class="footer">
         <hr />
-        <p>LêCosturas</p>
+        <center>
+        <p>Contate-nos: lecosturas@gmail.com / (21) 97656-0989</p>
+        </center>  
     </footer>
 </div>
+
 
  </form>
             

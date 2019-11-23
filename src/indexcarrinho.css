@@ -58,6 +58,7 @@
     display: inline-block;
     width: inline-block;
     padding: 10px;
+    float: center; 
 }
 
 img{
@@ -100,12 +101,10 @@ img{
     align-items: center;
     margin-left: 18%;
 }
-
-.fixarRodape {
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
+.footer {
+    position:relative;
+    bottom:0;
+    width:100%;
 }
 
 .linkback {
