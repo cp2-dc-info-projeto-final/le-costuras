@@ -125,14 +125,20 @@
 <button class="linkback"><a style="color: black" href="limparcarrinho.php">Limpar Carrinho</a></button>
 <button class="linkback"><a style="color: black" href="fim.php" >Finalizar Compra</a></button><h2>Valor total: R$</h2>
 
+<?php
 
-<?php 
- echo number_format ($vtotal, 2, ',', '.');
+ echo number_format ($vtotal, 2, ',', '.'); 
  ?>
+ 
  <br><br>
 <div class="h1">
 <center>
 <h1>Sua encomenda levará de 15 a 30 dias após feito o depósito do valor da compra para chegar no endereço cadastrado.</h1>
+</center>
+</div>
+<div class="h1" >
+<center>
+<h2>É adicionado o valor de R$15,00, referente ao frete, ao valor total.</h2>
 </center>
 </div>
  
