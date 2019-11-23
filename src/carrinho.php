@@ -72,6 +72,8 @@
       if (isset($_SESSION["id"])) {
         $idusuario = $_SESSION["id"];
     } else {
+        $erro= "<p style='color:red;'>É preciso estar logado para acessar o carrinho e finalizar uma compra.</p>";
+        $_SESSION["erro"]=$erro;
         header("Location: cadastroview.php");
     }
       if (!isset($_SESSION["carrinho"])) {
@@ -176,7 +178,16 @@ function buscarusuario() {
 <h2>É adicionado o valor de R$15,00, referente ao frete, ao valor total.</h2>
 </center>
 </div>
- 
+<div class="h1" >
+<center>
+<h2>O depósito deve ser feito na conta 12345-5, agencia 012(Caixa Econômica). </h2>
+</center>
+</div>
+<div class="h1" >
+<center>
+<h2>A entrega será feita no endereço cadastrado.</h2>
+</center>
+</div>
 
 
 

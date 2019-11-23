@@ -22,7 +22,7 @@ session_start();
 if (isset($_SESSION["id"])) {
     $idusuario = $_SESSION["id"];
 } else {
-    header("Location: cadastroview.php");
+      header("Location: cadastroview.php");
 }
 $carrinho = $_SESSION["carrinho"];
 $dataa = date ("Y-m-d");
