@@ -32,11 +32,12 @@ CREATE TABLE venda(
     foreign key (idusuario) references usuario(id)
 );
 
-CREATE TABLE ProdutoVenda(
+CREATE TABLE produtovenda(
+    id int,
     id_produto int,
     id_venda int,
     qtd int,
-    primary key (id_produto, id_venda),
+    primary key (id),
     foreign key (id_produto) references produto(id),
     foreign key (id_venda) references venda(id)
 );
