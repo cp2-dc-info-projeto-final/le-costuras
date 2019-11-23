@@ -29,11 +29,21 @@
 					  ?>
 				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
 				 <?php } ?>
-	        	 <li><a  href="homee.php">Home</a></li>
-				 <li><a  href="carrinho.php">Carrinho</a></li>
+                 <li><a  href="carrinho.php">Carrinho</a></li>
+				 <?php
+				 if(isset($_SESSION['email']) != true){
+					 ?>
+				 <li><a  href="loginview.php">Login</a></li>	
 				<li><a  href="cadastroview.php">Cadastro</a></li>
-				
+				<?php
+				 }
+				 ?>
+				<?php
+				if(isset($_SESSION['email']) && $_SESSION['email']=true){ ?>
 				<li><a  href="sair.php">Sair</a></li>
+				<?php
+				}
+				?>
 			  </ul> 
 			</div>
           <br><br>
@@ -59,7 +69,11 @@
 
 
 <?php
-      
+      if (isset($_SESSION["id"])) {
+        $idusuario = $_SESSION["id"];
+    } else {
+        header("Location: cadastroview.php");
+    }
       if (!isset($_SESSION["carrinho"])) {
         $_SESSION["carrinho"] = [];
     }
@@ -109,28 +123,49 @@
 
     
     <?php 
- $vtotal += $subtotal;
+ $vtotal =($vtotal += $subtotal) ;
  } } 
 
- $_SESSION["vtotal"] = $vtotal;
+ $_SESSION["vtotal"] = $vtotal + 15;
  ?>
  
  
-</table>
-<br><br>
-
-<button class="linkback"><a style="color: black" href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
-
-
-<button class="linkback"><a style="color: black" href="limparcarrinho.php">Limpar Carrinho</a></button>
-<button class="linkback"><a style="color: black" href="fim.php" >Finalizar Compra</a></button><h2>Valor total: R$</h2>
 
 <?php
+function buscarusuario() {
+    require_once "conexao.php";
+   $conn=get_connection();
+   if ($conn===false){
+       die("Erro de conexão".mysqli_connect_error());
+   }
+   $sql = "SELECT * from usuario where   id = ". $_SESSION["id"]; 
+    $result = mysqli_query($conn, $sql);
+    return mysqli_fetch_all($result, MYSQL_ASSOC);
+ }
+ $usuarios = buscarusuario();
 
- echo number_format ($vtotal, 2, ',', '.'); 
- ?>
- 
- <br><br>
+ foreach($usuarios as $usuario) {
+
+?>
+
+    <div>
+     
+        <tr>
+                <th> Cliente </th>
+                <th> E-Mail </th>
+                <th> Endereço </th>
+                <th> Valor total</th>
+            </tr>
+            <tr>
+            <td> <?php echo $usuario["nome"]; ?> </td>
+            <td> <?php echo $usuario["email"]; ?> </td>
+            <td> <?php echo $usuario["endereco"]; ?> </td>
+            <td> R$ <?php echo number_format ($_SESSION["vtotal"], 2, ',', '.'); ?> </td>
+  <?php
+                }    
+            ?>
+            </table>
+            <br><br>
 <div class="h1">
 <center>
 <h1>Sua encomenda levará de 15 a 30 dias após feito o depósito do valor da compra para chegar no endereço cadastrado.</h1>
@@ -142,6 +177,17 @@
 </center>
 </div>
  
+
+
+
+<br><br>
+
+<button class="linkback"><a style="color: black" href="indexcarrinho.php" class="color-white">Voltar Ao Catálogo</a> </button>
+
+
+<button class="linkback"><a style="color: black" href="limparcarrinho.php">Limpar Carrinho</a></button>
+<button class="linkback"><a style="color: black" href="fim.php" >Finalizar Compra</a></button>
+<br><br>
 
 </body>
 </html>

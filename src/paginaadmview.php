@@ -27,13 +27,9 @@ if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
 				
 		  <div class=" h_menu4">
 				<ul class="memenu skyblue">	
-				
-				<li><a  href="loginview.php">Login</a></li>	
-				<?php
-				  if (isset($_SESSION['email'])&& $_SESSION['moderador']==1){
-					  ?>
+	
 				<li><a  href="indexcarrinho.php">Catálogo</a></li>
-				 <?php } ?>
+
 
         <li><a  href="carrinho.php">Carrinho</a></li>
         <li><a  href="homee.php">Home</a></li>

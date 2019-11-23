@@ -19,6 +19,6 @@
         exit();
         
     } 
-    session_unsset();
+    
       
         ?>

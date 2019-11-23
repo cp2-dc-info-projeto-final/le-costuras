@@ -74,7 +74,7 @@
         if(array_key_exists('msg', $_SESSION) == true){
             $msg = $_SESSION["msg"];
             echo "$msg";
-            session_unset();
+    
         }
     ?>
 

@@ -1,0 +1,26 @@
+.h1 {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.linkback {
+    border-top: 1px solid #ff6d1f;
+    background: #ff6d1f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff6d1f), to(#ff6d1f));
+    background: -webkit-linear-gradient(top, #ff6d1f, #ff6d1f);
+    background: -moz-linear-gradient(top, #ff6d1f, #ff6d1f);
+    background: -ms-linear-gradient(top, #ff6d1f, #ff6d1f);
+    background: -o-linear-gradient(top, #ff6d1f, #ff6d1f);
+    padding: 13px 26px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: white 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    font-size: 17px;
+    font-family: Georgia, serif;
+    vertical-align: middle;
+    margin: 10px;
+    text-decoration: #ff6d1f;
+}

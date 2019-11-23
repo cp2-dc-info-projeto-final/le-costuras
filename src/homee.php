@@ -31,7 +31,7 @@
 				<ul class="memenu skyblue">
 					  <li><a class="color1" href="indexcarrinho.php">Catálogo</a></li>	
 				
-				<li><a  href="loginview.php">Login</a></li>	
+				
 				<?php
 				session_start();
 				  if (isset($_SESSION['email'])&& $_SESSION['moderador']==1){
@@ -39,9 +39,20 @@
 				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
 				 <?php } ?>
 				 <li><a  href="carrinho.php">Carrinho</a></li>
+				 <?php
+				 if(isset($_SESSION['email']) != true){
+					 ?>
+				 <li><a  href="loginview.php">Login</a></li>	
 				<li><a  href="cadastroview.php">Cadastro</a></li>
-				
+				<?php
+				 }
+				 ?>
+				<?php
+				if(isset($_SESSION['email']) && $_SESSION['email']=true){ ?>
 				<li><a  href="sair.php">Sair</a></li>
+				<?php
+				}
+				?>
 			  </ul> 
 			</div>
 				
@@ -110,12 +121,12 @@
 		<h1>NOSSOS TRABALHOS</h1>
 		<div class="grid-in">
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/2/kfranja.jpeg" alt="">
+				<a href="indexcarrinho.php" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/2/kfranja.jpeg" alt="">
 							<div class="b-wrapper">
 									
 								</div>
 				</a>
-                <p><a href="single.html">Kimono Mey</a></p>
+                <p><a href="indexcarrinho.php">Kimono Mey</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
 				<a href="indexcarrinho.php" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/3/bamarela.jpeg" alt="">

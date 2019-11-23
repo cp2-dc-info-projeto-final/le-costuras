@@ -1,3 +1,7 @@
+<?php 
+session_start();
+if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){ 
+  require 'paginaadmctrl.php'; ?>
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -22,15 +26,8 @@
 				<ul class="memenu skyblue">
 					  <li><a class="color1" href="indexcarrinho.php">Catálogo</a></li>	
 				
-				<li><a  href="loginview.php">Login</a></li>	
-				<?php
-				  if (isset($_SESSION['email'])&& $_SESSION['moderador']==1){
-					  ?>
-				<li><a  href="paginaadmview.php">Pagina do Administrador</a></li>
-				 <?php } ?>
 				 <li><a  href="homee.php">Home</a></li>
 				 <li><a  href="carrinho.php">Carrinho</a></li>
-				<li><a  href="cadastroview.php">Cadastro</a></li>
 				<li><a  href="sair.php">Sair</a></li>
 			  </ul> 
 			</div>
@@ -94,7 +91,7 @@
     return mysqli_fetch_all($result, MYSQL_ASSOC);
  }
 
- session_start();
+ 
 
  $vendas = buscarvendas();
 
@@ -133,6 +130,7 @@
                 <td> <?php echo $produto["preco"]; ?> </td>
                 <td> <?php echo $produto["qtd"]; ?> </td>
                 <td> R$ <?php echo number_format ($produto['preco'] * $produto['qtd'], 2, ',', '.') ?> 
+                <td> <input type="checkbox"> concluido </td> 
             </tr>
             
 
@@ -144,5 +142,7 @@
  }
 ?>
 </table>
-
+</body>
+</html>
+<?php } else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
  
