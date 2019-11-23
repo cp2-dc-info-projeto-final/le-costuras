@@ -115,53 +115,52 @@
 									
 								</div>
 				</a>
-		
-
-			<p><a href="single.html">kimono Mey</a></p>
+                <p><a href="single.html">Kimono Mey</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/1/kestampado.jpeg" alt="">
+				<a href="indexcarrinho.php" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/3/bamarela.jpeg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">Kimono Natasha</a></p>
+			<p><a href="indexcarrinho.php">Blusa Aurora</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/3/bamarela.jpeg" alt="">
+				<a href="indexcarrinho.php" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/1/kestampado.jpeg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">blusa Aurora</a></p>
+			<p><a href="indexcarrinho.php">Kinomo Natasha</a></p>
 			</div>
 					<div class="clearfix"> </div>
 		</div>
 		<div class="grid-in">
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/4/bazul.jpeg" alt="">
+				<a href="indexcarrinho.php" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/4/bazul.jpeg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">blusa celeste</a></p>
+			<p><a href="single.html">Blusa Celeste</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="gucci.jpg" alt="">
+				<a href="indexcarrinho.php" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/5/vesinf.jpg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">Content here</a></p>
+			<p><a href="single.html">Vestido Gabi</a></p>
 			</div>
 			<div class="col-md-4 grid-top">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi5.jpg" alt="">
+				<a href="indexcarrinho.php" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="imagemp/7/bpreta.jpg" alt="">
 					<div class="b-wrapper">
 									
 								</div>
 				</a>
-			<p><a href="single.html">readable content</a></p>
+			<p><a href="indexcarrinho.php">Blusa Katy</a></p>
 			</div>
+			
 					<div class="clearfix"> </div>
 		</div>
 	</div>
