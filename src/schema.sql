@@ -44,4 +44,4 @@ CREATE TABLE produtovenda(
     primary key (id),
     foreign key (id_produto) references produto(id),
     foreign key (id_venda) references venda(id)
-);
+); 
