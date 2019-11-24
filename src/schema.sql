@@ -16,7 +16,7 @@ INSERT INTO produto (id, nome, preco, descricao, imagem) VALUES
 (5, 'Vestido Gabi', 30, 'Vestido infantil sem mangas em listras pretas, brancas e beges.', 'imagemp/5/vesinf.jpg'),
 (6, 'Kimono Angel', 40, 'Kimono de magas, em renda branca com detalhes em flores.', 'imagemp/6/krenda.jpg'),
 (7, 'Blusa Katy', 30, 'Blusa preta em alças finas e decote em U, com estampa delicada em flores.', 'imagemp/7/bpreta.jpg'),
-(8, 'Saia Patrícia', 45, 'Saia jeans com detalhe lateral.', 'imagemp/8/saia.jpg');
+(8, 'Saia Patrícia', 45, 'Saia jeans com detalhe lateral.', 'imagemp/8/saiaj.jpg');
 
 CREATE TABLE usuario (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -44,4 +44,4 @@ CREATE TABLE produtovenda(
     primary key (id),
     foreign key (id_produto) references produto(id),
     foreign key (id_venda) references venda(id)
-); 
+);  

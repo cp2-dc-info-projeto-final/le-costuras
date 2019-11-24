@@ -72,7 +72,7 @@
       if (isset($_SESSION["id"])) {
         $idusuario = $_SESSION["id"];
     } else {
-        $erro= "<p style='color:red;'>É preciso estar logado para acessar o carrinho e finalizar uma compra.</p>";
+        $erro= "<p style='color:red;'>É preciso ser cadastrado e estar logado para acessar o carrinho e finalizar uma compra.</p>";
         $_SESSION["erro"]=$erro;
         header("Location: cadastroview.php");
     }
@@ -202,7 +202,6 @@ function buscarusuario() {
 
 </body>
 </html>
- 
 
 
 
