@@ -180,12 +180,17 @@ function buscarusuario() {
 </div>
 <div class="h1" >
 <center>
-<h2>O depósito deve ser feito na conta 12345-5, agencia 012(Caixa Econômica). </h2>
+<h2>O depósito deve ser feito em um prazo de três dias úteis, na conta 12345-5, agencia 012(Caixa Econômica). </h2>
 </center>
 </div>
 <div class="h1" >
 <center>
 <h2>A entrega será feita no endereço cadastrado.</h2>
+</center>
+</div>
+<div class="h1" >
+<center>
+<h2>Qualquer dúvida entre em contato através do email lecosturas@gmail.com.</h2>
 </center>
 </div>
 
